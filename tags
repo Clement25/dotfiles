@@ -1,2 +1,38 @@
 !_TAG_FILE_SORTED	2	/0=unsorted, 1=sorted, 2=foldcase/
+<C-H>	/home/emrys/Github/github-repo/dotfiles/.vimrc	/^nnoremap <C-H> <C-W><C-H>$/;"	m	language:Vim
+<C-J>	/home/emrys/Github/github-repo/dotfiles/.vimrc	/^nnoremap <C-J> <C-W><C-J>$/;"	m	language:Vim
+<C-K>	/home/emrys/Github/github-repo/dotfiles/.vimrc	/^nnoremap <C-K> <C-W><C-K>$/;"	m	language:Vim
+<C-L>	/home/emrys/Github/github-repo/dotfiles/.vimrc	/^nnoremap <C-L> <C-W><C-L>$/;"	m	language:Vim
+<C-]>	/home/emrys/Github/github-repo/dotfiles/.vimrc	/^nnoremap <C-]> g<C-]>$/;"	m	language:Vim
+<Leader>b	/home/emrys/Github/github-repo/dotfiles/.vimrc	/^nmap <Leader>b <C-]>$/;"	m	language:Vim
+<leader>b	/home/emrys/Github/github-repo/dotfiles/.vimrc	/^nmap <silent> <leader>b :TagbarToggle<CR>$/;"	m	language:Vim
+<leader>c	/home/emrys/Github/github-repo/dotfiles/.vimrc	/^nmap <leader>c zc$/;"	m	language:Vim
+<Leader>d	/home/emrys/Github/github-repo/dotfiles/.vimrc	/^nmap <Leader>d Oimport pdb; pdb.set_trace()<Esc>$/;"	m	language:Vim
+<leader>f	/home/emrys/Github/github-repo/dotfiles/.vimrc	/^nmap <leader>f :Files<space>$/;"	m	language:Vim
+<leader>g	/home/emrys/Github/github-repo/dotfiles/.vimrc	/^nmap <leader>g :Ag<space>$/;"	m	language:Vim
+<leader>o	/home/emrys/Github/github-repo/dotfiles/.vimrc	/^nmap <leader>o zo$/;"	m	language:Vim
+<leader>t	/home/emrys/Github/github-repo/dotfiles/.vimrc	/^nmap <silent> <leader>t :NERDTreeTabsToggle<CR>$/;"	m	language:Vim
+<Leader>ve	/home/emrys/Github/github-repo/dotfiles/.vimrc	/^map <Leader>ve :sp $HOME\/.vimrc<CR>$/;"	m	language:Vim
+<Leader>vs	/home/emrys/Github/github-repo/dotfiles/.vimrc	/^map <Leader>vs :source $HOME\/.vimrc<CR>$/;"	m	language:Vim
+<Leader>[	/home/emrys/Github/github-repo/dotfiles/.vimrc	/^nmap <Leader>[ <C-o>$/;"	m	language:Vim
+<Leader>]	/home/emrys/Github/github-repo/dotfiles/.vimrc	/^nmap <Leader>] <C-i>$/;"	m	language:Vim
+delimitMate_expand_cr	/home/emrys/Github/github-repo/dotfiles/.vimrc	/^let delimitMate_expand_cr = 1$/;"	v	language:Vim
+g:ag_working_path_mode	/home/emrys/Github/github-repo/dotfiles/.vimrc	/^let g:ag_working_path_mode="r"$/;"	v	language:Vim
+g:airline#extensions#hunks#non_zero_only	/home/emrys/Github/github-repo/dotfiles/.vimrc	/^let g:airline#extensions#hunks#non_zero_only = 1$/;"	v	language:Vim
+g:airline#extensions#tabline#enabled	/home/emrys/Github/github-repo/dotfiles/.vimrc	/^let g:airline#extensions#tabline#enabled = 1$/;"	v	language:Vim
+g:airline_detect_paste	/home/emrys/Github/github-repo/dotfiles/.vimrc	/^let g:airline_detect_paste=1$/;"	v	language:Vim
+g:easytags_async	/home/emrys/Github/github-repo/dotfiles/.vimrc	/^let g:easytags_async = 1$/;"	v	language:Vim
+g:easytags_dynamic_files	/home/emrys/Github/github-repo/dotfiles/.vimrc	/^let g:easytags_dynamic_files = 2$/;"	v	language:Vim
+g:easytags_events	/home/emrys/Github/github-repo/dotfiles/.vimrc	/^let g:easytags_events = ['BufReadPost', 'BufWritePost']$/;"	v	language:Vim
+g:easytags_resolve_links	/home/emrys/Github/github-repo/dotfiles/.vimrc	/^let g:easytags_resolve_links = 1$/;"	v	language:Vim
+g:easytags_suppress_ctags_warning	/home/emrys/Github/github-repo/dotfiles/.vimrc	/^let g:easytags_suppress_ctags_warning = 1$/;"	v	language:Vim
+g:nerdtree_tabs_open_on_console_startup	/home/emrys/Github/github-repo/dotfiles/.vimrc	/^let g:nerdtree_tabs_open_on_console_startup = 1$/;"	v	language:Vim
+g:SimpylFold_docstring_preview	/home/emrys/Github/github-repo/dotfiles/.vimrc	/^let g:SimpylFold_docstring_preview=1$/;"	v	language:Vim
+g:syntastic_error_symbol	/home/emrys/Github/github-repo/dotfiles/.vimrc	/^let g:syntastic_error_symbol = '✘'$/;"	v	language:Vim
+g:syntastic_warning_symbol	/home/emrys/Github/github-repo/dotfiles/.vimrc	/^let g:syntastic_warning_symbol = "▲"$/;"	v	language:Vim
+K	/home/emrys/Github/github-repo/dotfiles/.vimrc	/^noremap K :SuperMan <cword><CR>$/;"	m	language:Vim
+mapleader	/home/emrys/Github/github-repo/dotfiles/.vimrc	/^let mapleader = '\\'$/;"	v	language:Vim
+mydelimitMate	/home/emrys/Github/github-repo/dotfiles/.vimrc	/^augroup mydelimitMate$/;"	a	language:Vim
+mySyntastic	/home/emrys/Github/github-repo/dotfiles/.vimrc	/^augroup mySyntastic$/;"	a	language:Vim
 parse_git_branch	/home/emrys/Github/github-repo/dotfiles/.bashrc	/^parse_git_branch() {$/;"	f	language:Sh
+python_highlight_all	/home/emrys/Github/github-repo/dotfiles/.vimrc	/^let python_highlight_all=1$/;"	v	language:Vim

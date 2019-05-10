@@ -71,13 +71,14 @@ Plugin 'jez/vim-ispc'
 Plugin 'kchmck/vim-coffee-script'
 
 " ----- global search plugin -----------------------------------------
+"  ------------ both of these need to install extra stuff
 Plugin 'junegunn/fzf'
 Plugin 'junegunn/fzf.vim'
+Plugin 'rking/ag.vim'
 
 " ------- multiple cursor -------------------------
 Plugin 'terryma/vim-multiple-cursors'
 "-------<C-n> for multiple cursor
-
 
 " ---- Extras/Advanced plugins ----------------------------------------
 " Highlight and strip trailing whitespace
@@ -242,6 +243,15 @@ nmap <Leader>b <C-]>
 nmap <Leader>[ <C-o>
 nmap <Leader>d Oimport pdb; pdb.set_trace()<Esc>
 
+" ------------ search map keys ---------
+" --only search in current dir
+let g:ag_working_path_mode="r"
+nmap <leader>f :Files<space>
+nmap <leader>g :Ag<space>
+"--- for open and close files-----
+nmap <leader>c zc
+nmap <leader>o zo
+
 "split navigations
 nnoremap <C-J> <C-W><C-J>
 nnoremap <C-K> <C-W><C-K>
@@ -249,3 +259,6 @@ nnoremap <C-L> <C-W><C-L>
 nnoremap <C-H> <C-W><C-H>
 nnoremap <C-]> g<C-]>
 
+
+"""" cheetsheets
+" $ will go to another closed bracket
