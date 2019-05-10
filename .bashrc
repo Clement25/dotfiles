@@ -121,3 +121,6 @@ if ! shopt -oq posix; then
     . /etc/bash_completion
   fi
 fi
+
+# emrys mappings
+alias 's'='git status'
