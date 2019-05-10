@@ -122,5 +122,11 @@ if ! shopt -oq posix; then
   fi
 fi
 
-# emrys mappings
+# emrys key mappings
 alias 's'='git status'
+
+
+# vman page for vim superman
+export PATH="$PATH:$HOME/.vim/bundle/vim-superman/bin"
+complete -o default -o nospace -F _man vman
+alias 'man'='vman'
