@@ -1,10 +1,3 @@
-" File: .vimrc
-" Author: Jake Zimmerman <jake@zimmerman.io>
-"
-" How I configure Vim :P
-"
-
-" Gotta be first
 set nocompatible
 
 filetype off
@@ -13,6 +6,9 @@ set rtp+=~/.vim/bundle/Vundle.vim
 call vundle#begin()
 
 Plugin 'VundleVim/Vundle.vim'
+
+
+
 
 " ----- Making Vim look good ------------------------------------------
 Plugin 'altercation/vim-colors-solarized'
@@ -28,13 +24,18 @@ Plugin 'xolox/vim-misc'
 Plugin 'xolox/vim-easytags'
 Plugin 'majutsushi/tagbar'
 Plugin 'ctrlpvim/ctrlp.vim'
-Plugin 'vim-scripts/a.vim'
+
+" --- install to list header file for c/cpp
+" Plugin 'vim-scripts/a.vim'
 
 " ----- Working with Git ----------------------------------------------
+"  show git diff with ~/-/+
 Plugin 'airblade/vim-gitgutter'
+" git commit using Gcommit
 Plugin 'tpope/vim-fugitive'
 
 " ----- Other text editing features -----------------------------------
+" when you type an open bracket it will close for you
 Plugin 'Raimondi/delimitMate'
 
 " ----- man pages, tmux -----------------------------------------------
@@ -45,6 +46,10 @@ Plugin 'christoomey/vim-tmux-navigator'
 Plugin 'jez/vim-c0'
 Plugin 'jez/vim-ispc'
 Plugin 'kchmck/vim-coffee-script'
+
+
+
+Plugin 'junegunn/fzf.vim'
 
 " ---- Extras/Advanced plugins ----------------------------------------
 " Highlight and strip trailing whitespace
@@ -93,7 +98,7 @@ set background=dark
 "let g:solarized_termcolors=256
 
 " Set the colorscheme
-colorscheme solarized
+colorscheme vim_dark
 
 
 " ----- bling/vim-airline settings -----
@@ -167,3 +172,19 @@ augroup END
 " ----- jez/vim-superman settings -----
 " better man page support
 noremap K :SuperMan <cword><CR>
+
+
+
+
+" ------ plugin for folding fuctions ---
+let g:SimpylFold_docstring_preview=1
+let python_highlight_all=1
+
+" ------ remap keys ---------
+let mapleader = '\'
+map <Leader>ve :sp $HOME/.vimrc<CR>
+map <Leader>vs :source $HOME/.vimrc<CR>
+nmap <Leader>] <C-i>
+nmap <Leader>b <C-]>
+nmap <Leader>[ <C-o>
+nmap <Leader>d Oimport pdb; pdb.set_trace()<Esc>
