@@ -122,11 +122,25 @@ if ! shopt -oq posix; then
   fi
 fi
 
-# emrys key mappings
+# shortcut for git push by Emrys
+alias "push"='git push origin master'
 alias 's'='git status'
-
+alias 'add'='git add .'
+alias 'commit'='git commit -m'
 
 # vman page for vim superman
 export PATH="$PATH:$HOME/.vim/bundle/vim-superman/bin"
 complete -o default -o nospace -F _man vman
 alias 'man'='vman'
+
+# for server .bashrc jupyter notebook connection
+alias 'notebook'='jupyter notebook --no-browser --port=8889'
+# for local .bashrc jupyter notebook and ssh connection
+alias 'server'='ssh pengfei@172.17.240.117'
+alias 'server_notebook'='ssh -N -L localhost:8888:localhost:8889 pengfei@172.17.240.117'
+
+# cuda related path added by emrys
+# export PATH=/usr/local/cuda-9.1/bin${PATH:+:${PATH}}
+# export LD_LIBRARY_PATH=/usr/local/cuda-9.1/lib64${LD_LIBRARY_PATH:+:${LD_LIBRARY_PATH}}
+
+
