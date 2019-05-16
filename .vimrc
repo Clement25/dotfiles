@@ -239,7 +239,7 @@ let mapleader = '\'
 map <Leader>ve :sp $HOME/.vimrc<CR>
 map <Leader>vs :source $HOME/.vimrc<CR>
 nmap <Leader>] <C-i>
-nmap <Leader>b <C-]>
+nmap <Leader>t <C-]>
 nmap <Leader>[ <C-o>
 nmap <Leader>d Oimport pdb; pdb.set_trace()<Esc>
 
