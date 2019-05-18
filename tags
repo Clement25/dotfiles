@@ -16,6 +16,7 @@
 <Leader>vs	/Users/emrys/Github/github-repo/dotfiles/.vimrc	/^map <Leader>vs :source $HOME\/.vimrc<CR>$/;"	m	language:Vim
 <Leader>[	/Users/emrys/Github/github-repo/dotfiles/.vimrc	/^nmap <Leader>[ <C-o>$/;"	m	language:Vim
 <Leader>]	/Users/emrys/Github/github-repo/dotfiles/.vimrc	/^nmap <Leader>] <C-i>$/;"	m	language:Vim
+<tab>	/Users/emrys/Github/github-repo/dotfiles/.vimrc	/^inoremap <tab> <c-r>=Smart_TabComplete()<CR>$/;"	m	language:Vim
 delimitMate_expand_cr	/Users/emrys/Github/github-repo/dotfiles/.vimrc	/^let delimitMate_expand_cr = 1$/;"	v	language:Vim
 g:ag_working_path_mode	/Users/emrys/Github/github-repo/dotfiles/.vimrc	/^let g:ag_working_path_mode="r"$/;"	v	language:Vim
 g:airline#extensions#hunks#non_zero_only	/Users/emrys/Github/github-repo/dotfiles/.vimrc	/^let g:airline#extensions#hunks#non_zero_only = 1$/;"	v	language:Vim
@@ -35,3 +36,4 @@ mapleader	/Users/emrys/Github/github-repo/dotfiles/.vimrc	/^let mapleader = '\\'
 mydelimitMate	/Users/emrys/Github/github-repo/dotfiles/.vimrc	/^augroup mydelimitMate$/;"	a	language:Vim
 mySyntastic	/Users/emrys/Github/github-repo/dotfiles/.vimrc	/^augroup mySyntastic$/;"	a	language:Vim
 python_highlight_all	/Users/emrys/Github/github-repo/dotfiles/.vimrc	/^let python_highlight_all=1$/;"	v	language:Vim
+Smart_TabComplete	/Users/emrys/Github/github-repo/dotfiles/.vimrc	/^function! Smart_TabComplete()$/;"	f	language:Vim
