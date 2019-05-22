@@ -230,11 +230,39 @@ augroup mydelimitMate
   au FileType python let b:delimitMate_nesting_quotes = ['"', "'"]
 augroup END
 
-" ----- jez/vim-superman settings -----
+
+
+
+""" ------ AUTOCOMPLETETION FOR FILE NAMES ----
+set wildmode=longest,list,full
+set wildmenu
+""" ------ END --------------------------------
+
+
+""" ------ PASTE MODE -------------------------
+set pastetoggle=<F3>
+""" ------ END --------------------------------
+
+
+
+
+
+
+
+
+
+
+
+
+
+" ############### MAP KEYS ######################
+
+
+
+
 " better man page support
 noremap K :SuperMan <cword><CR>
 
-" ------ remap keys ---------
 let mapleader = '\'
 map <Leader>ve :sp $HOME/.vimrc<CR>
 map <Leader>vs :source $HOME/.vimrc<CR>
@@ -243,26 +271,35 @@ nmap <Leader>t <C-]>
 nmap <Leader>[ <C-o>
 nmap <Leader>d Oimport pdb; pdb.set_trace()<Esc>
 
-" ------------ search map keys ---------
-" --only search in current dir
+
+
+
+""" ------ SEARCH ----------------------------
 let g:ag_working_path_mode="r"
 nmap <leader>f :Files<space>
 nmap <leader>g :Ag<space>
-"--- for open and close files-----
+""" ------- END ------------------------------
+
+
+"---------- OPEN AND CLOSE FUNCTIONS ---------
 nmap <leader>c zc
 nmap <leader>o zo
+" --------- END ------------------------------
 
-"split navigations
+
+
+
+"---------- SPLIT NAVIGATIONS ----------------
 nnoremap <C-J> <C-W><C-J>
 nnoremap <C-K> <C-W><C-K>
 nnoremap <C-L> <C-W><C-L>
 nnoremap <C-H> <C-W><C-H>
 nnoremap <C-]> g<C-]>
+" --------- END ------------------------------
 
-""" ------ AUTOCOMPLETETION FOR FILE NAMES ----
-set wildmode=longest,list,full
-set wildmenu
-""" ------ END --------------------------------
+
+
+
 
 
 
