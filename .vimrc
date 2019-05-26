@@ -1,17 +1,26 @@
+""" GENERAL SETTINGS
 set nocompatible
-filetype off
-
-"set ttyfast
 set mouse=a
 set t_Co=256
-"------ python powerline_setup ---------
-"python3 import sys; sys.path.append("/home/<username>/anaconda3/lib/python3.7/site-packages")
-"python3 from powerline.vim import setup as powerline_setup
-"python3 powerline_setup()
-"python3 del powerline_setup
+filetype plugin indent on
+syntax on
+set encoding=utf-8
+set backupdir=~/vimfiles/tmp,.
+set directory=~/vimfiles/tmp,.
+set expandtab
+set backspace=indent,eol,start
+set ruler
+set number
+set showcmd
+set incsearch
+set hlsearch
+""" GENERAL SETTINGS END
 
 
-set foldcolumn=3
+
+
+
+
 
 set rtp+=~/.vim/bundle/Vundle.vim
 call vundle#begin()
@@ -20,14 +29,10 @@ call vundle#begin()
 Plugin 'VundleVim/Vundle.vim'
 
 " --------- for folding functions ------------- "
+set foldcolumn=3
 Plugin 'tmhedberg/SimpylFold'
 let g:SimpylFold_docstring_preview=1
-"Plugin 'janko-m/vim-test'
-"nmap <silent> <leader>t :TestNearest<CR>
-"nmap <silent> <leader>T :TestFile<CR>
-"nmap <silent> <leader>a :TestSuite<CR>
-"nmap <silent> <leader>l :TestLast<CR>
-"nmap <silent> <leader>g :TestVisit<CR>
+
 Plugin 'jeetsukumaran/vim-indentwise'
 Plugin 'vim-scripts/indentpython.vim'
 "Plugin 'Konfekt/FastFold'
@@ -48,8 +53,7 @@ Plugin 'xolox/vim-easytags'
 Plugin 'majutsushi/tagbar'
 Plugin 'ctrlpvim/ctrlp.vim'
 
-" --- install to list header file for c/cpp
-" Plugin 'vim-scripts/a.vim'
+
 
 " ----- Working with Git ----------------------------------------------
 "  show git diff with ~/-/+
@@ -96,21 +100,31 @@ Plugin 'terryma/vim-multiple-cursors'
 "Plugin 'digitaltoad/vim-jade'
 "Plugin 'tpope/vim-liquid'
 "Plugin 'cakebaker/scss-syntax.vim'
-
+" ---- for testing -----
+"Plugin 'janko-m/vim-test'
+"nmap <silent> <leader>t :TestNearest<CR>
+"nmap <silent> <leader>T :TestFile<CR>
+"nmap <silent> <leader>a :TestSuite<CR>
+"nmap <silent> <leader>l :TestLast<CR>
+"nmap <silent> <leader>g :TestVisit<CR>
+" --- install to list header file for c/cpp
+" Plugin 'vim-scripts/a.vim'
 call vundle#end()            " required
 
 
-filetype plugin indent on
-
+""" PYTHON RELATED SETTINGS
 let python_highlight_all=1
-syntax on
-set encoding=utf-8
+"------ python powerline_setup ---------
+"python3 import sys; sys.path.append("/home/<username>/anaconda3/lib/python3.7/site-packages")
+"python3 from powerline.vim import setup as powerline_setup
+"python3 powerline_setup()
+"python3 del powerline_setup
 
-set backupdir=~/vimfiles/tmp,.
-set directory=~/vimfiles/tmp,.
+""" PYTHON RELATED SETTINGS END
 
-set pastetoggle=<F10>
-set expandtab
+
+
+
 
 au BufNewFile,BufRead *.py set tabstop=4 softtabstop=4 shiftwidth=4 textwidth=119 expandtab autoindent fileformat=unix
 au BufNewFile,BufRead *.cpp set tabstop=2 softtabstop=2 shiftwidth=2 textwidth=119 expandtab autoindent fileformat=unix
@@ -123,7 +137,6 @@ au BufNewFile,BufRead *.js,*.html,*.css: set tabstop=2 softtabstop=2 shiftwidth=
 set list
 set listchars=tab:>-
 
-" PASTE BEGINS"
 
 
 
@@ -137,50 +150,44 @@ set listchars=tab:>-
 
 
 
-" --- General settings ---
-set backspace=indent,eol,start
-set ruler
-set number
-set showcmd
-set incsearch
-set hlsearch
+
+
+
+
+
+
+" ----- PLUGIN-SPECIFIC SETTINGS --------------------------------------
+
 
 " We need this for plugins like Syntastic and vim-gitgutter which put symbols
 " in the sign column.
 hi clear SignColumn
 
-" ----- Plugin-Specific Settings --------------------------------------
 
-" ----- altercation/vim-colors-solarized settings -----
+" ##### COLOR SCHEME SETTINGS
 " Toggle this to "light" for light colorscheme
 set background=dark
-
 " Uncomment the next line if your terminal is not configured for solarized
 "let g:solarized_termcolors=256
-
 " Set the colorscheme
 "colorscheme vim_dark
-
-
+" Use the solarized theme for the Airline status bar
+"let g:airline_theme='solarized'
 " ----- bling/vim-airline settings -----
 " Always show statusbar
 set laststatus=2
-
 " Fancy arrow symbols, requires a patched font
 " To install a patched font, run over to
 "     https://github.com/abertsch/Menlo-for-Powerline
 " download all the .ttf files, double-click on them and click "Install"
 " Finally, uncomment the next line
 "let g:airline_powerline_fonts = 1
-
 " Show PASTE if in paste mode
-let g:airline_detect_paste=1
-
+let g:airline_detect_paste=2
 " Show airline for tabs too
 let g:airline#extensions#tabline#enabled = 1
+" ##### COLOR SCHEME SETTINGS END
 
-" Use the solarized theme for the Airline status bar
-"let g:airline_theme='solarized'
 
 " ----- jistr/vim-nerdtree-tabs -----
 " Open/close NERDTree Tabs with \t
@@ -230,12 +237,29 @@ augroup mydelimitMate
   au FileType python let b:delimitMate_nesting_quotes = ['"', "'"]
 augroup END
 
+" better man page support
+noremap K :SuperMan <cword><CR>
 
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+" ############### MAP KEYS AND CUSTOMIZED FUNCTIONS ######################
 
 
 """ ------ AUTOCOMPLETETION FOR FILE NAMES ----
 set wildmode=longest,list,full
-set wildmenu
+set wildmenu=longest
 """ ------ END --------------------------------
 
 
@@ -247,21 +271,6 @@ set pastetoggle=<F3>
 
 
 
-
-
-
-
-
-
-
-
-" ############### MAP KEYS ######################
-
-
-
-
-" better man page support
-noremap K :SuperMan <cword><CR>
 
 let mapleader = '\'
 map <Leader>ve :sp $HOME/.vimrc<CR>
