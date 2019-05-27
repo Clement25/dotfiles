@@ -4,6 +4,7 @@
 <C-K>	/Users/emrys/Github/github-repo/dotfiles/.vimrc	/^nnoremap <C-K> <C-W><C-K>$/;"	m	language:Vim
 <C-L>	/Users/emrys/Github/github-repo/dotfiles/.vimrc	/^nnoremap <C-L> <C-W><C-L>$/;"	m	language:Vim
 <C-]>	/Users/emrys/Github/github-repo/dotfiles/.vimrc	/^nnoremap <C-]> g<C-]>$/;"	m	language:Vim
+<leader><t>	/Users/emrys/Github/github-repo/dotfiles/.vimrc	/^nnoremap <leader><t> :bo 15sp | terminal$/;"	m	language:Vim
 <leader>b	/Users/emrys/Github/github-repo/dotfiles/.vimrc	/^nmap <silent> <leader>b :TagbarToggle<CR>$/;"	m	language:Vim
 <leader>c	/Users/emrys/Github/github-repo/dotfiles/.vimrc	/^nmap <leader>c zc$/;"	m	language:Vim
 <Leader>d	/Users/emrys/Github/github-repo/dotfiles/.vimrc	/^nmap <Leader>d Oimport pdb; pdb.set_trace()<Esc>$/;"	m	language:Vim

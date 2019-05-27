@@ -143,19 +143,6 @@ set listchars=tab:>-
 
 
 
-
-
-
-
-
-
-
-
-
-
-
-
-
 " ----- PLUGIN-SPECIFIC SETTINGS --------------------------------------
 
 
@@ -264,7 +251,8 @@ set wildmenu=longest
 
 
 """ ------ PASTE MODE -------------------------
-set pastetoggle=<F3>
+set 
+pastetoggle=<F3>
 """ ------ END --------------------------------
 
 
@@ -308,8 +296,12 @@ nnoremap <C-]> g<C-]>
 
 
 
-
-
+" ------- TERMINAL BUFFER -------------------
+tnoremap <Esc> <C-\><C-n>
+nnoremap <leader><t> :bo 15sp | terminal
+" :terminal (bring up new terminal)
+" <C-d> close terminal
+" ---------- END ----------------------------
 
 
 """ ------ AUTOCOMPLETION FOR CODE ------------
