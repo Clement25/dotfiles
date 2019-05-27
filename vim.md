@@ -74,6 +74,7 @@ there are certain special marks, e.g. `\backtick.` to go to last edit
 `:set hls!` to turn off highlight search\
 `:set shell=/usr/bin/zsh` set shell to zshell\
 `:bo 15sp +te` create a terminal buffer
+(this only works on [neovim](https://thoughtbot.com/blog/my-life-with-neovim))
 OPEN WITH NO VIMRC `vi -u NONE`
 
 OPEN WITH SPLIT THE WINDOW AT MIDDLE `vi -O <files-to-be-split>`
