@@ -3,3 +3,5 @@
         email = hongpengfei.emrys@gmail.com
 [push]
         default = simple
+[core]
+	editor = vim

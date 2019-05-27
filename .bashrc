@@ -143,4 +143,9 @@ alias 'server_notebook'='ssh -N -L localhost:8888:localhost:8889 pengfei@172.17.
 # export PATH=/usr/local/cuda-9.1/bin${PATH:+:${PATH}}
 # export LD_LIBRARY_PATH=/usr/local/cuda-9.1/lib64${LD_LIBRARY_PATH:+:${LD_LIBRARY_PATH}}
 
+# shortcut for tmux
+alias 'new'='tmux new-session -s '
+alias 'attach'='tmux attach -t '
+alias 'tl'='tmux list-sessions'
+alias 'switch'='tmux switch -t work'
 

@@ -35,5 +35,6 @@ K	/home/emrys/Github/github-repo/dotfiles/.vimrc	/^noremap K :SuperMan <cword><C
 mapleader	/home/emrys/Github/github-repo/dotfiles/.vimrc	/^let mapleader = '\\'$/;"	v	language:Vim
 mydelimitMate	/home/emrys/Github/github-repo/dotfiles/.vimrc	/^augroup mydelimitMate$/;"	a	language:Vim
 mySyntastic	/home/emrys/Github/github-repo/dotfiles/.vimrc	/^augroup mySyntastic$/;"	a	language:Vim
+parse_git_branch	/home/emrys/Github/github-repo/dotfiles/.bashrc	/^parse_git_branch() {$/;"	f	language:Sh
 python_highlight_all	/home/emrys/Github/github-repo/dotfiles/.vimrc	/^let python_highlight_all=1$/;"	v	language:Vim
 Smart_TabComplete	/home/emrys/Github/github-repo/dotfiles/.vimrc	/^function! Smart_TabComplete()$/;"	f	language:Vim
