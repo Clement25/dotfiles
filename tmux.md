@@ -58,6 +58,12 @@ Switch to a session:
 
     tmux switch -t work
 
+kill all the session:
+    tmux kill-server
+
+kill a target session:
+    tmux kill-session -t targetSession
+
 Create a new session that shares all windows with an existing session, but has its own separate notion of which window is current:
 
     tmux new-session -s work2 -t work
