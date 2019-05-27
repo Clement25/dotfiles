@@ -176,11 +176,9 @@ let g:airline#extensions#tabline#enabled = 1
 " ##### COLOR SCHEME SETTINGS END
 
 
-" ----- jistr/vim-nerdtree-tabs -----
-" Open/close NERDTree Tabs with \t
-nmap <silent> <leader>t :NERDTreeTabsToggle<CR>
+
 " To have NERDTree always open on startup
-let g:nerdtree_tabs_open_on_console_startup = 1
+let g:nerdtree_tabs_open_on_console_startup = 0
 
 
 " ----- scrooloose/syntastic settings -----
@@ -251,8 +249,7 @@ set wildmenu=longest
 
 
 """ ------ PASTE MODE -------------------------
-set 
-pastetoggle=<F3>
+set pastetoggle=<F3>
 """ ------ END --------------------------------
 
 
@@ -268,6 +265,10 @@ nmap <Leader>t <C-]>
 nmap <Leader>[ <C-o>
 nmap <Leader>d Oimport pdb; pdb.set_trace()<Esc>
 
+" ----- JISTR/VIWGM-NERDTREE-TABS -------------
+" Open/close NERDTree Tabs with \t
+nmap <silent> <leader>t :NERDTreeTabsToggle<CR>
+""" --------- END ---------------------------
 
 
 

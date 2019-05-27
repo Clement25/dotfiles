@@ -28,7 +28,7 @@ g:easytags_dynamic_files	/Users/emrys/Github/github-repo/dotfiles/.vimrc	/^let g
 g:easytags_events	/Users/emrys/Github/github-repo/dotfiles/.vimrc	/^let g:easytags_events = ['BufReadPost', 'BufWritePost']$/;"	v	language:Vim
 g:easytags_resolve_links	/Users/emrys/Github/github-repo/dotfiles/.vimrc	/^let g:easytags_resolve_links = 1$/;"	v	language:Vim
 g:easytags_suppress_ctags_warning	/Users/emrys/Github/github-repo/dotfiles/.vimrc	/^let g:easytags_suppress_ctags_warning = 1$/;"	v	language:Vim
-g:nerdtree_tabs_open_on_console_startup	/Users/emrys/Github/github-repo/dotfiles/.vimrc	/^let g:nerdtree_tabs_open_on_console_startup = 1$/;"	v	language:Vim
+g:nerdtree_tabs_open_on_console_startup	/Users/emrys/Github/github-repo/dotfiles/.vimrc	/^let g:nerdtree_tabs_open_on_console_startup = 0$/;"	v	language:Vim
 g:SimpylFold_docstring_preview	/Users/emrys/Github/github-repo/dotfiles/.vimrc	/^let g:SimpylFold_docstring_preview=1$/;"	v	language:Vim
 g:syntastic_error_symbol	/Users/emrys/Github/github-repo/dotfiles/.vimrc	/^let g:syntastic_error_symbol = '✘'$/;"	v	language:Vim
 g:syntastic_warning_symbol	/Users/emrys/Github/github-repo/dotfiles/.vimrc	/^let g:syntastic_warning_symbol = "▲"$/;"	v	language:Vim
