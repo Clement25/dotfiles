@@ -9,9 +9,9 @@
 <Leader>d	/home/emrys/Github/github-repo/dotfiles/.vimrc	/^nmap <Leader>d Oimport pdb; pdb.set_trace()<Esc>$/;"	m	language:Vim
 <leader>f	/home/emrys/Github/github-repo/dotfiles/.vimrc	/^nmap <leader>f :Files<space>$/;"	m	language:Vim
 <leader>g	/home/emrys/Github/github-repo/dotfiles/.vimrc	/^nmap <leader>g :Ag<space>$/;"	m	language:Vim
+<leader>n	/home/emrys/Github/github-repo/dotfiles/.vimrc	/^nmap <silent> <leader>n :NERDTreeTabsToggle<CR>$/;"	m	language:Vim
 <leader>o	/home/emrys/Github/github-repo/dotfiles/.vimrc	/^nmap <leader>o zo$/;"	m	language:Vim
 <Leader>t	/home/emrys/Github/github-repo/dotfiles/.vimrc	/^nmap <Leader>t <C-]>$/;"	m	language:Vim
-<leader>t	/home/emrys/Github/github-repo/dotfiles/.vimrc	/^nmap <silent> <leader>t :NERDTreeTabsToggle<CR>$/;"	m	language:Vim
 <Leader>ve	/home/emrys/Github/github-repo/dotfiles/.vimrc	/^map <Leader>ve :sp $HOME\/.vimrc<CR>$/;"	m	language:Vim
 <Leader>vs	/home/emrys/Github/github-repo/dotfiles/.vimrc	/^map <Leader>vs :source $HOME\/.vimrc<CR>$/;"	m	language:Vim
 <Leader>[	/home/emrys/Github/github-repo/dotfiles/.vimrc	/^nmap <Leader>[ <C-o>$/;"	m	language:Vim

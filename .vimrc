@@ -267,7 +267,7 @@ nmap <Leader>d Oimport pdb; pdb.set_trace()<Esc>
 
 " ----- JISTR/VIWGM-NERDTREE-TABS -------------
 " Open/close NERDTree Tabs with \t
-nmap <silent> <leader>t :NERDTreeTabsToggle<CR>
+nmap <silent> <leader>n :NERDTreeTabsToggle<CR>
 """ --------- END ---------------------------
 
 
@@ -297,8 +297,8 @@ nnoremap <C-]> g<C-]>
 
 
 " ------- TERMINAL BUFFER -------------------
-"tnoremap <Esc> <C-\><C-n>
-"nnoremap <leader><t> :bo 15sp | terminal
+tnoremap <Esc> <C-\><C-n>
+" :bo 15sp | terminal  (bring up a terminal below
 " :terminal (bring up new terminal)
 " <C-d> close terminal
 " ---------- END ----------------------------
@@ -357,3 +357,9 @@ inoremap <tab> <c-r>=Smart_TabComplete()<CR>
 "  zc - closes fold
 "  :set foldmethod=syntax (remove all folding)
 "  zR 			  (remove all folding)
+"
+"
+"  --- AUTOCOMPLETION
+"  <C-E> for give up editing
+"  <C-Y> for choosing a complete
+"  <C-n> for next option
