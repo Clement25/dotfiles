@@ -44,15 +44,23 @@ Creating a session:
 
     tmux new-session -s work
 
-Create a new session that shares all windows with an existing session, but has its own separate notion of which window is current:
-
-    tmux new-session -s work2 -t work
-
 Attach to a session:
 
     tmux attach -t work
 
+List all the sessions:
+
+    tmux list-sessions
+
 Detach from a session: `C-a d`.
+
+Switch to a session:
+
+    tmux switch -t work
+
+Create a new session that shares all windows with an existing session, but has its own separate notion of which window is current:
+
+    tmux new-session -s work2 -t work
 
 Switch between sessions:
 
@@ -156,3 +164,11 @@ Force a reload of the config file on C-a r:
 Some other settings that I use:
 
     setw -g xterm-keys on
+
+
+## More resources
+quick select pane: cohttps://thoughtbot.com/blog/a-tmux-crash-course#helpful-tmux-commands
+
+navigate through tmux: https://thoughtbot.com/blog/seamlessly-navigate-vim-and-tmux-splits
+
+work flow in tmux: https://coderwall.com/p/_g2vpq/workflow-in-tmux
