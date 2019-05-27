@@ -243,8 +243,8 @@ noremap K :SuperMan <cword><CR>
 
 
 """ ------ AUTOCOMPLETETION FOR FILE NAMES ----
-set wildmode=longest,list,full
-set wildmenu=longest
+set wildmenu
+set wildmode=longest:full,full
 """ ------ END --------------------------------
 
 
@@ -296,10 +296,9 @@ nnoremap <C-]> g<C-]>
 " --------- END ------------------------------
 
 
-
 " ------- TERMINAL BUFFER -------------------
-tnoremap <Esc> <C-\><C-n>
-nnoremap <leader><t> :bo 15sp | terminal
+"tnoremap <Esc> <C-\><C-n>
+"nnoremap <leader><t> :bo 15sp | terminal
 " :terminal (bring up new terminal)
 " <C-d> close terminal
 " ---------- END ----------------------------
