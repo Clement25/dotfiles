@@ -300,7 +300,7 @@ nnoremap <C-]> g<C-]>
 
 
 " ------- TERMINAL BUFFER -------------------
-tnoremap <Esc> <C-\><C-n>
+" tnoremap <Esc> <C-\><C-n>
 " :bo 15sp | terminal  (bring up a terminal below
 " :terminal (bring up new terminal)
 " <C-d> close terminal
