@@ -252,7 +252,10 @@ set wildmode=longest:full,full
 set pastetoggle=<F3>
 """ ------ END --------------------------------
 
-
+""" -------- LINE NUMBER ----------------------
+nmap <F4> :set nu! <CR>
+nmap <F5> :set rnu! <CR>
+""" -------- END ------------------------------
 
 
 
