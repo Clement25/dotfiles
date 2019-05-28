@@ -326,7 +326,7 @@ function! Smart_TabComplete()
   endif
 endfunction
 
-inoremap <tab> <c-r>=Smart_TabComplete()<CR>
+" inoremap <tab> <c-r>=Smart_TabComplete()<CR>
 """ ------ END -------------------------------
 
 
