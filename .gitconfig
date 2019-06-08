@@ -2,11 +2,12 @@
         name = Emrys-Hong
         email = hongpengfei.emrys@gmail.com
 [alias]
+        ac = "!git add . ; git commit "
         a = add .
         ci = commit 
         co = checkout
         lo = log --graph --pretty=format:'%Cred%h%Creset -%C(yellow)%d%Creset %s %Cgreen(%cr) %C(cyan)<%an>%Creset' --abbrev-commit --date=relative
-        s = "! git status"
+        s = "!git status"
         d = diff
         cre = git config credential.helper store
         p = "!git rev-parse --abbrev-ref HEAD | xargs git push origin"
@@ -16,9 +17,8 @@
         alias = "!git config -l | grep alias | cut -c 7-"
         amend = commit --amend
         rmc = rm --cached 
-        addpy = "!git ls-files | grep .py | xargs git add "
-        
-
+        addt = !sh -c 'git ls-files | grep \"\\.$1*\" | xargs git add' - 
+        change = "!change() { git diff --name-status \"$1^\" \"$1\"; }; change"
 
 
 [push]
