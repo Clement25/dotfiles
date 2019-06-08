@@ -14,7 +14,7 @@
         uncommit = reset --soft HEAD^
         f = "!git ls-files | grep -i"
         alias = "!git config -l | grep alias | cut -c 7-"
-        mend = commit --amend 
+
 
 
 [push]
