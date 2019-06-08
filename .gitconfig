@@ -1,10 +1,27 @@
 [user]
         name = Emrys-Hong
         email = hongpengfei.emrys@gmail.com
+[alias]
+        a = add .
+        ci = commit 
+        co = checkout
+        lo = log --graph --pretty=format:'%Cred%h%Creset -%C(yellow)%d%Creset %s %Cgreen(%cr) %C(cyan)<%an>%Creset' --abbrev-commit --date=relative
+        s = status
+        f = diff
+
 [push]
         default = simple
 [core]
         editor = vim
-        excludesfile = ~/.gitignore_global
+        excludesfile = /home/pengfei/.gitignore_global
 
+[color]
+    branch = auto
+    diff = auto
+    interactive = auto
+    status = auto
+
+
+[credential]
+        helper = cache --timeout=3600000000000000000000
 # git config credential.helper store
