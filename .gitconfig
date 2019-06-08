@@ -7,8 +7,15 @@
         co = checkout
         lo = log --graph --pretty=format:'%Cred%h%Creset -%C(yellow)%d%Creset %s %Cgreen(%cr) %C(cyan)<%an>%Creset' --abbrev-commit --date=relative
         s = status
-        f = diff
+        d = diff
         cre = git config credential.helper store
+        p = "!git rev-parse --abbrev-ref HEAD | xargs git push origin"
+        unstage = reset --mixed HEAD .
+        uncommit = reset --soft HEAD^
+        f = "!git ls-files | grep -i"
+        alias = "!git config -l | grep alias | cut -c 7-"
+        mend = commit --amend 
+
 
 [push]
         default = simple
