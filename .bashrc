@@ -122,13 +122,7 @@ if ! shopt -oq posix; then
   fi
 fi
 
-# shortcut for git push by Emrys
-alias "push"='git push origin master'
-alias 's'='git status'
-alias 'add'='git add .'
-alias 'commit'='git commit'
-alias 'log'='git log --oneline'
-alias 'credential'='git config credential.helper store'
+
 
 # vman page for vim superman
 export PATH="$PATH:$HOME/.vim/bundle/vim-superman/bin"
