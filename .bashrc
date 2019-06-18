@@ -132,7 +132,7 @@ alias 'man'='vman'
 # for server .bashrc jupyter notebook connection
 alias 'notebook'='jupyter notebook --no-browser --port=8889'
 # for local .bashrc jupyter notebook and ssh connection
-alias 'server'='ssh pengfei@172.17.240.117'
+alias 'server0'='ssh pengfei@172.17.240.117'
 alias 'server4'='ssh pengfei@172.17.240.228'
 alias 'server3'='ssh pengfei@192.168.32.31'
 alias 'server2'='ssh pengfei@198.168.32.32'
