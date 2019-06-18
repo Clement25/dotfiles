@@ -13,4 +13,6 @@ ln -s Github/dotfiles/.ssh .
 # wget https://repo.anaconda.com/miniconda/Miniconda3-latest-Linux-x86_64.sh
 # bash Miniconda3-latest-Linux-x86_64.sh
 # rm bash Miniconda3-latest-Linux-x86_64.sh
-
+# git clone https://github.com/VundleVim/Vundle.vim.git ~/.vim/bundle/Vundle.vim
+# sudo apt-get install tmux
+# sudo apt-get install ctags
