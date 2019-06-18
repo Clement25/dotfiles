@@ -9,16 +9,17 @@
         lo = log --graph --pretty=format:'%Cred%h%Creset -%C(yellow)%d%Creset %s %Cgreen(%cr) %C(cyan)<%an>%Creset' --abbrev-commit --date=relative
         s = "!git status"
         d = diff
-        cre = git config credential.helper store
+        cre = config credential.helper store
         p = "!git rev-parse --abbrev-ref HEAD | xargs git push origin"
         unstage = reset --mixed HEAD .
         uncommit = reset --soft HEAD^
+        back = reset --hard HEAD
         f = "!git ls-files | grep -i"
         alias = "!git config -l | grep alias | cut -c 7-"
         amend = commit --amend
         rmc = rm --cached 
         addt = !sh -c 'git ls-files | grep \"\\.$1*\" | xargs git add' - 
-        change = "!change() { git diff --name-status \"$1^\" \"$1\"; }; change"
+        file-change = "!change() { git diff --name-status \"$1^\" \"$1\"; }; change"
 
 
 [push]

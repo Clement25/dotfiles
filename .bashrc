@@ -133,6 +133,9 @@ alias 'man'='vman'
 alias 'notebook'='jupyter notebook --no-browser --port=8889'
 # for local .bashrc jupyter notebook and ssh connection
 alias 'server'='ssh pengfei@172.17.240.117'
+alias 'server4'='ssh pengfei@172.17.240.228'
+alias 'server3'='ssh pengfei@192.168.32.31'
+alias 'server2'='ssh pengfei@198.168.32.32'
 alias 'server_notebook'='ssh -N -L localhost:8888:localhost:8889 pengfei@172.17.240.117'
 
 # cuda related path added by emrys
@@ -153,7 +156,7 @@ if [ $? -eq 0 ]; then
     \eval "$__conda_setup"
 else
     if [ -f "/home/pengfei/miniconda3/etc/profile.d/conda.sh" ]; then
-        . "/home/pengfei/miniconda3/etc/profile.d/conda.sh"
+# . "/home/pengfei/miniconda3/etc/profile.d/conda.sh"  # commented out by conda initialize
         CONDA_CHANGEPS1=false conda activate base
     else
         \export PATH="/home/pengfei/miniconda3/bin:$PATH"
@@ -163,3 +166,19 @@ unset __conda_setup
 # <<< conda init <<<
 alias 'sl'='screen -ls'
 alias 'sr'='screen -r '
+
+# >>> conda initialize >>>
+# !! Contents within this block are managed by 'conda init' !!
+__conda_setup="$('/home/pengfei/miniconda3/bin/conda' 'shell.bash' 'hook' 2> /dev/null)"
+if [ $? -eq 0 ]; then
+    eval "$__conda_setup"
+else
+    if [ -f "/home/pengfei/miniconda3/etc/profile.d/conda.sh" ]; then
+        . "/home/pengfei/miniconda3/etc/profile.d/conda.sh"
+    else
+        export PATH="/home/pengfei/miniconda3/bin:$PATH"
+    fi
+fi
+unset __conda_setup
+# <<< conda initialize <<<
+

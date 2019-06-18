@@ -1,11 +1,16 @@
-ln -s .bashrc ~/
-ln -s .gitconfig ~/
-ln -s .gitignore_global ~/
-ln -s .pdbrc ~/
-ln -s .pdbrc.py ~/
-ln -s .tmux.conf ~/
-ln -s .toprc ~/
-ln -s .vimrc ~/
-ln -s .vim_less ~/ 
-ln -s .vim ~/
-ln -s .ssh ~/
+cd 
+ln -s Github/dotfiles/.bashrc .
+ln -s Github/dotfiles/.gitconfig .
+ln -s Github/dotfiles/.gitignore_global .
+ln -s Github/dotfiles/.pdbrc .
+ln -s Github/dotfiles/.pdbrc.py .
+ln -s Github/dotfiles/.tmux.conf .
+ln -s Github/dotfiles/.toprc .
+ln -s Github/dotfiles/.vimrc .
+ln -s Github/dotfiles/.vim_less .
+ln -s Github/dotfiles/.vim .
+ln -s Github/dotfiles/.ssh .
+# wget https://repo.anaconda.com/miniconda/Miniconda3-latest-Linux-x86_64.sh
+# bash Miniconda3-latest-Linux-x86_64.sh
+# rm bash Miniconda3-latest-Linux-x86_64.sh
+
