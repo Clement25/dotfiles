@@ -43,7 +43,7 @@ esac
 # uncomment for a colored prompt, if the terminal has the capability; turned
 # off by default to not distract the user: the focus in a terminal window
 # should be on the output of commands, not on the prompt
-#force_color_prompt=yes
+force_color_prompt=yes
 
 if [ -n "$force_color_prompt" ]; then
     if [ -x /usr/bin/tput ] && tput setaf 1 >&/dev/null; then
@@ -133,11 +133,11 @@ alias 'man'='vman'
 alias 'notebook'='jupyter notebook --no-browser --port=8889'
 # for local .bashrc jupyter notebook and ssh connection
 alias 'server0'='ssh pengfei@172.17.240.117'
-alias 'server4'='ssh pengfei@172.17.240.228'
 alias 'server3'='ssh pengfei@192.168.32.31'
-alias 'server2'='ssh pengfei@198.168.32.32'
+alias 'server4'='ssh pengfei@172.17.240.228'
+alias 'server5'='ssh pengfei@192.168.32.32'
 alias 'server_notebook'='ssh -N -L localhost:8888:localhost:8889 pengfei@172.17.240.117'
-
+alias 'server5_notebook'='ssh -N -L localhost:8888:localhost:8889 pengfei@192.168.32.32'
 # cuda related path added by emrys
 # export PATH=/usr/local/cuda-9.1/bin${PATH:+:${PATH}}
 # export LD_LIBRARY_PATH=/usr/local/cuda-9.1/lib64${LD_LIBRARY_PATH:+:${LD_LIBRARY_PATH}}
