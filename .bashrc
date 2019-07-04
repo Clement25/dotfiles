@@ -122,51 +122,6 @@ if ! shopt -oq posix; then
   fi
 fi
 
-
-
-# vman page for vim superman
-export PATH="$PATH:$HOME/.vim/bundle/vim-superman/bin"
-complete -o default -o nospace -F _man vman
-alias 'man'='vman'
-
-# for server .bashrc jupyter notebook connection
-alias 'notebook'='jupyter notebook --no-browser --port=8889'
-# for local .bashrc jupyter notebook and ssh connection
-alias 'server0'='ssh pengfei@172.17.240.117'
-alias 'server3'='ssh pengfei@192.168.32.31'
-alias 'server4'='ssh pengfei@172.17.240.228'
-alias 'server5'='ssh pengfei@192.168.32.32'
-alias 'server_notebook'='ssh -N -L localhost:8888:localhost:8889 pengfei@172.17.240.117'
-alias 'server5_notebook'='ssh -N -L localhost:8888:localhost:8889 pengfei@192.168.32.32'
-# cuda related path added by emrys
-# export PATH=/usr/local/cuda-9.1/bin${PATH:+:${PATH}}
-# export LD_LIBRARY_PATH=/usr/local/cuda-9.1/lib64${LD_LIBRARY_PATH:+:${LD_LIBRARY_PATH}}
-
-# shortcut for tmux
-alias 'new'='tmux new-session -s '
-alias 'attach'='tmux attach -t '
-alias 'tl'='tmux list-sessions'
-alias 'switch'='tmux switch -t work'
-
-# added by Miniconda3 4.5.12 installer
-# >>> conda init >>>
-# !! Contents within this block are managed by 'conda init' !!
-__conda_setup="$(CONDA_REPORT_ERRORS=false '/home/pengfei/miniconda3/bin/conda' shell.bash hook 2> /dev/null)"
-if [ $? -eq 0 ]; then
-    \eval "$__conda_setup"
-else
-    if [ -f "/home/pengfei/miniconda3/etc/profile.d/conda.sh" ]; then
-# . "/home/pengfei/miniconda3/etc/profile.d/conda.sh"  # commented out by conda initialize
-        CONDA_CHANGEPS1=false conda activate base
-    else
-        \export PATH="/home/pengfei/miniconda3/bin:$PATH"
-    fi
-fi
-unset __conda_setup
-# <<< conda init <<<
-alias 'sl'='screen -ls'
-alias 'sr'='screen -r '
-
 # >>> conda initialize >>>
 # !! Contents within this block are managed by 'conda init' !!
 __conda_setup="$('/home/pengfei/miniconda3/bin/conda' 'shell.bash' 'hook' 2> /dev/null)"
@@ -181,4 +136,34 @@ else
 fi
 unset __conda_setup
 # <<< conda initialize <<<
+
+# vman page for vim superman
+export PATH="$PATH:$HOME/.vim/bundle/vim-superman/bin"
+complete -o default -o nospace -F _man vman
+alias 'man'='vman'
+
+# for server .bashrc jupyter notebook connection
+alias 'notebook'='jupyter notebook --no-browser --port=8889'
+# for local .bashrc jupyter notebook and ssh connection
+alias 'server0'='ssh pengfei@172.17.240.117'
+alias 'server3'='ssh pengfei@192.168.32.31'
+alias 'server4'='ssh pengfei@172.17.240.228'
+alias 'server5'='ssh pengfei@192.168.32.32'
+alias 'notebook0'='ssh -N -L localhost:8888:localhost:8889 pengfei@172.17.240.117'
+alias 'notebook5'='ssh -N -L localhost:8888:localhost:8889 pengfei@192.168.32.32'
+# cuda related path added by emrys
+# export PATH=/usr/local/cuda-9.1/bin${PATH:+:${PATH}}
+# export LD_LIBRARY_PATH=/usr/local/cuda-9.1/lib64${LD_LIBRARY_PATH:+:${LD_LIBRARY_PATH}}
+
+# shortcut for tmux
+alias 'new'='tmux new-session -s '
+alias 'attach'='tmux attach -t '
+alias 'tl'='tmux list-sessions'
+alias 'switch'='tmux switch -t work'
+
+
+alias 'sl'='screen -ls'
+alias 'sr'='screen -r '
+
+
 
