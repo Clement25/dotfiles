@@ -366,3 +366,6 @@ endfunction
 "  <C-E> for give up editing
 "  <C-Y> for choosing a complete
 "  <C-n> for next option
+"  
+"  ---- REPLACE WORDS GLOBALLY
+"  :%s/foo/bar/g
