@@ -137,6 +137,9 @@ fi
 unset __conda_setup
 # <<< conda initialize <<<
 
+# set gpu device order as their number instead of the fastest
+export CUDA_DEVICE_ORDER=PCI_BUS_ID
+
 # vman page for vim superman
 export PATH="$PATH:$HOME/.vim/bundle/vim-superman/bin"
 complete -o default -o nospace -F _man vman
