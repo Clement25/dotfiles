@@ -112,8 +112,9 @@ Plugin 'terryma/vim-multiple-cursors'
 call vundle#end()            " required
 
 
-""" PYTHON RELATED SETTINGS
-let python_highlight_all=1
+""" highlight redundant spaces in python
+" let python_highlight_all=1
+"
 "------ python powerline_setup ---------
 "python3 import sys; sys.path.append("/home/<username>/anaconda3/lib/python3.7/site-packages")
 "python3 from powerline.vim import setup as powerline_setup
