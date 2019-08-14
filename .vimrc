@@ -373,3 +373,7 @@ endfunction
 "
 "  --- CANCEL HIGHLIGHT
 "  :noh
+"
+"  --- FIND LOCAL FILE FUNCTION DEFINITION
+"  gd
+"
