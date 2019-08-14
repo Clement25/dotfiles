@@ -182,9 +182,9 @@ alias 'notebook5'='ssh -N -L localhost:8888:localhost:8889 pengfei@192.168.32.32
 
 # shortcut for tmux
 alias 'new'='tmux new-session -s '
-alias 'attach'='tmux attach -t '
 alias 'tl'='tmux list-sessions'
-alias 'switch'='tmux switch -t work'
+alias 'switch'='tmux switch -t'
+alias 'ta'='tmux a'
 
 
 # shortcut for screen
