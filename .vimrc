@@ -370,3 +370,6 @@ endfunction
 "  
 "  ---- REPLACE WORDS GLOBALLY
 "  :%s/foo/bar/g
+"
+"  --- CANCEL HIGHLIGHT
+"  :noh
