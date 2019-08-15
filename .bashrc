@@ -169,6 +169,10 @@ export PATH="$PATH:$HOME/.vim/bundle/vim-superman/bin"
 complete -o default -o nospace -F _man vman
 alias 'man'='vman'
 
+alias '..'='cd ..'
+alias '...'='cd ../..'
+alias '....'='cd ../../..'
+
 # for server .bashrc jupyter notebook connection
 alias 'notebook'='jupyter notebook --no-browser --port=8889'
 # for local .bashrc jupyter notebook and ssh connection
