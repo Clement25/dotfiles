@@ -332,7 +332,8 @@ endfunction
 
 
 
-
+" set vim do not break line number when too long
+set formatoptions-=tc
 
 
 
