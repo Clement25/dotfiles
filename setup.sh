@@ -18,6 +18,7 @@ ln -s Github/dotfiles/.toprc .
 ln -s Github/dotfiles/.vimrc .
 ln -s Github/dotfiles/.ssh .
 ln -s Github/dotfiles/.inputrc .
+ln -s Github/dotfiles/.nvtop.sh .
 
 echo "install miniconda"
 wget https://repo.anaconda.com/miniconda/Miniconda3-latest-Linux-x86_64.sh

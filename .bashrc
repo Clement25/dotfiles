@@ -154,6 +154,10 @@ export CUDA_DEVICE_ORDER=PCI_BUS_ID
 # checkpid <pid>
 alias 'checkpid'='ps -u -p'
 
+# check gpu usage
+#alias 'nvtop'="bash ~/Github/dotfiles/.nvtop.sh"
+alias 'nvtop'="python ~/Github/dotfiles/.nvidia-htop.py --color -l 100"
+
 # cuda version
 alias 'cudav'='nvcc --version'
 alias 'cuda-version'='cat /usr/local/cuda/version.txt'
@@ -167,7 +171,7 @@ alias 'cudnn-version'='cat /usr/local/cuda/include/cudnn.h | grep CUDNN_MAJOR -A
 # vman page for vim superman
 export PATH="$PATH:$HOME/.vim/bundle/vim-superman/bin"
 complete -o default -o nospace -F _man vman
-alias 'man'='vman'
+# alias 'man'='vman'
 
 alias '..'='cd ..'
 alias '...'='cd ../..'
