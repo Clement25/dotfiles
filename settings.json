@@ -1,0 +1,23 @@
+{
+    "vim.easymotion": true,
+    "vim.sneak": true,
+    "vim.incsearch": true,
+    "vim.useSystemClipboard": true,
+    "vim.useCtrlKeys": true,
+    "vim.hlsearch": true,
+    "vim.normalModeKeyBindings": [
+        {
+            "before": ["<leader>", "]"],
+            "after": ["<C-i>"]
+        },
+        {
+            "before": ["<leader>", "["],
+            "after": ["<C-o>"]
+        },
+        {
+            "before": ["<leader>", "t"],
+            "after": ["<C-]"]
+        }
+    ],
+    "vim.leader": "\\"
+}
