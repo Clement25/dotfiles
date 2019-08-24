@@ -159,8 +159,8 @@ alias 'checkpid'='ps -u -p'
 alias 'nvtop'="python ~/Github/dotfiles/.nvidia-htop.py --color -l 100"
 
 # cuda version
-alias 'cudav'='nvcc --version'
-alias 'cuda-version'='cat /usr/local/cuda/version.txt'
+alias 'nvv'='nvcc --version'
+alias 'nv-version'='cat /usr/local/cuda/version.txt'
 
 # cudnn version
 alias 'cudnn-version'='cat /usr/local/cuda/include/cudnn.h | grep CUDNN_MAJOR -A 2'
