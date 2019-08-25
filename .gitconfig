@@ -11,6 +11,7 @@
         d = diff
         cre = config credential.helper store
         p = "!git rev-parse --abbrev-ref HEAD | xargs git push origin"
+        pl = "!git rev-parse --abbrev-ref HEAD | xargs git pull origin"
         unstage = reset --mixed HEAD .
         uncommit = reset --soft HEAD^
         back = reset --hard HEAD
