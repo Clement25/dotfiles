@@ -179,7 +179,7 @@ alias '....'='cd ../../..'
 
 alias 'cl'='clear'
 
-alias 'sb'='source ~/.bashrc'
+alias 'src'='source ~/.bashrc'
 # for server .bashrc jupyter notebook connection
 alias 'notebook'='jupyter notebook --no-browser --port=8889'
 # for local .bashrc jupyter notebook and ssh connection
