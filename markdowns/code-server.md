@@ -1,6 +1,7 @@
 # Run VS code on remote server
-Code server demo:\
-![code-server-demo](images/code-server.gif)
+Code server demo:
+
+![code-server-demo](../images/code-server.gif)
 
 ## Installation
 Run the following script it will create a `code-server` folder in your home directory and install it there
@@ -11,8 +12,8 @@ Copy paste this code to your terminal for installation:
 wget https://gist.githubusercontent.com/Emrys-Hong/0aaccb17af5f896af1e9d00f8cf5b7f1/raw/59111f7ac80783f0d049334440a9d3f671d74031/code-server-setup.sh  -O - | bash
 ```
 
-Or you can copy from below:
-<script src="https://gist.github.com/Emrys-Hong/0aaccb17af5f896af1e9d00f8cf5b7f1.js"></script>
+Or you can copy from below into your terminal: \
+https://gist.github.com/Emrys-Hong/0aaccb17af5f896af1e9d00f8cf5b7f1
 
 Installation is Done!
 
