@@ -6,9 +6,12 @@ Code server demo:\
 Run the following script it will create a `code-server` folder in your home directory and install it there
 
 
-Copy paste this code to your terminal for installation: `wget https://gist.githubusercontent.com/Emrys-Hong/0aaccb17af5f896af1e9d00f8cf5b7f1/raw/59111f7ac80783f0d049334440a9d3f671d74031/code-server-setup.sh  -O - | bash`
+Copy paste this code to your terminal for installation: 
+```bash
+wget https://gist.githubusercontent.com/Emrys-Hong/0aaccb17af5f896af1e9d00f8cf5b7f1/raw/59111f7ac80783f0d049334440a9d3f671d74031/code-server-setup.sh  -O - | bash
+```
 
-Or you can copy from below
+Or you can copy from below:
 <script src="https://gist.github.com/Emrys-Hong/0aaccb17af5f896af1e9d00f8cf5b7f1.js"></script>
 
 Installation is Done!
