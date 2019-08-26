@@ -335,8 +335,10 @@ endfunction
 " set vim do not break line number when too long
 set formatoptions-=tc
 
-
-
+" disable pylint in vscode
+let g:pymode_lint_write = 0
+" turn on/off pylint
+" :PyLintToggle  
 
 """"""""""""""""""""""""" CHEATSHEET CHEATSHEET CHEATSHEET CHEATSHEET
 " % will go to the other closed bracket
