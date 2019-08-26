@@ -1,8 +1,19 @@
 # how to keep track of all the configuration files
 
+put all of your configuration file in dotfiles repo
 
-## using `rsync`
-`rsync --exclude ".git/" . ~`
+To setup:
+```
+bash setup.sh
+```
 
-## using softlink
-`ln -sv ~/Projects/dotfiles/.bash_profile ~` to link each files individually
+To unlink all the .files from ~/:
+```
+bash unlink.sh
+```
+
+To show all the custom alias\
+`alias` 
+
+To show all the custom alias related to git\
+`git alias` 
