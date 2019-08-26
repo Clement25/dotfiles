@@ -12,6 +12,8 @@ To unlink all the .files from ~/:
 bash unlink.sh
 ```
 
+To show all the custom alias\
+`alias` 
 
-type 'alias' to show all the custom alias\
-type 'git alias' to show all the custom alias related to git
+To show all the custom alias related to git\
+`git alias` 
