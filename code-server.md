@@ -1,5 +1,5 @@
 # Run VS code on remote server
-Code server demo:
+Code server demo:\
 ![code-server-demo](images/code-server.gif)
 
 ## Installation
@@ -24,13 +24,13 @@ Congratulations, you can open vscode in your browser now.\
 If you meet any error, probably somebody is already using that port, choose another port mapping.
 
 
-## Vscode setup: Install pylint for code navigation:\
-1. Go to extension\
+## Vscode setup: Install pylint for code navigation:
+1. Go to extension
 2. Search extension `Python` and install. (reload if it requires)
 3. It will prompt you to install pylint also, you can install it with `pip` or `conda`
 4. Now you can pick function definition by `<command> + <click function>`
 
-## Final step:\
+## Final step:
 Hide bookmarks in chrome to make screen look bigger: \
 `<command> + <shift> + b`
 
