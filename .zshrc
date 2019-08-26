@@ -179,3 +179,9 @@ alias tb='tensorboard --port=6007 --logdir' # run locally
 alias tb3='ssh -N -L localhost:6006:localhost:6007 pengfei@192.168.32.31'
 alias tb5='ssh -N -L localhost:6006:localhost:6007 pengfei@192.168.32.32'
 
+# shortcut for code server
+alias 'code'='~/code-server/code-server'
+alias 'code0'='ssh -N -L localhost:8080:localhost:8080 pengfei@172.17.240.117'
+alias 'code3'='ssh -N -L localhost:8080:localhost:8080 pengfei@192.168.32.31'
+alias 'code4'='ssh -N -L localhost:8080:localhost:8080 pengfei@172.17.240.228'
+alias 'code5'='ssh -N -L localhost:8080:localhost:8080 pengfei@192.168.32.32'
