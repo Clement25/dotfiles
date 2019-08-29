@@ -307,6 +307,12 @@ nnoremap <C-]> g<C-]>
 " <C-d> close terminal
 " ---------- END ----------------------------
 
+" -------- SYNTASTIC CHECK ------------------
+let g:syntastic_mode_map = { 'mode': 'passive', 'active_filetypes': [],'passive_filetypes': [] }
+nnoremap <C-w>E :SyntasticCheck<CR> :SyntasticToggleMode<CR>
+" -------- END ------------------------------
+
+
 
 """ ------ AUTOCOMPLETION FOR CODE ------------
 function! Smart_TabComplete()
