@@ -1,4 +1,4 @@
-""" GENERAL SETTINGS
+"_Q"" GENERAL SETTINGS
 set nocompatible
 set mouse=a
 set t_Co=256
@@ -264,9 +264,9 @@ nmap <F5> :set rnu! <CR>
 let mapleader = '\'
 map <Leader>ve :sp $HOME/.vimrc<CR>
 map <Leader>vs :source $HOME/.vimrc<CR>
-nmap <Leader>] <C-i>
-nmap <Leader>t <C-]>
-nmap <Leader>[ <C-o>
+" nmap <leader>] <C-i>
+" nmap <Leader>t <C-]>
+" nmap <leader>[ <C-o>
 nmap <Leader>d Oimport pdb; pdb.set_trace()<Esc>
 
 " ----- JISTR/VIWGM-NERDTREE-TABS -------------
