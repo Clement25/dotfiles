@@ -26,7 +26,7 @@ On server, key in the following command, `<port_number>` can be any four digit i
 On local machine:\
 `ssh -N -L 0.0.0.0:<port_number>:localhost:<port_number> username@ip`
 
-Congratulations, you can open vscode in your browser now.\
+Congratulations, you can open vscode in your browser now.
 
 The default port number is 8080, If you meet any error, probably somebody is already using that port, choose another port mapping by `--port=<another_port_number>`.
 

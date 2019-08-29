@@ -167,29 +167,18 @@ alias 'cudnn-version'='cat /usr/local/cuda/include/cudnn.h | grep CUDNN_MAJOR -A
 
 # ------------------- cuda related --------------------------------------------------------------------
 
-
 # vman page for vim superman
 export PATH="$PATH:$HOME/.vim/bundle/vim-superman/bin"
 complete -o default -o nospace -F _man vman
-# alias 'man'='vman'
+# you can use vman for better man page
 
+# daily commands
 alias '..'='cd ..'
 alias '...'='cd ../..'
 alias '....'='cd ../../..'
-
 alias 'cl'='clear'
-
-alias 'src'='source ~/.bashrc'
-# for server .bashrc jupyter notebook connection
-alias 'notebook'='jupyter notebook --no-browser --port=8889'
-# for local .bashrc jupyter notebook and ssh connection
-alias 'server0'='ssh pengfei@172.17.240.117'
-alias 'server3'='ssh pengfei@192.168.32.31'
-alias 'server4'='ssh pengfei@172.17.240.228'
-alias 'server5'='ssh pengfei@192.168.32.32'
-alias 'notebook0'='ssh -N -L localhost:8888:localhost:8889 pengfei@172.17.240.117'
-alias 'notebook3'='ssh -N -L localhost:8888:localhost:8889 pengfei@192.168.32.31'
-alias 'notebook5'='ssh -N -L localhost:8888:localhost:8889 pengfei@192.168.32.32'
+alias 'brc'='source ~/.bashrc'
+alias 'zrc'='source ~/.zshrc'
 
 # shortcut for tmux
 alias 'new'='tmux new-session -s '
@@ -197,20 +186,29 @@ alias 'tl'='tmux list-sessions'
 alias 'switch'='tmux switch -t'
 alias 'ta'='tmux a'
 
-
 # shortcut for screen
 alias 'sl'='screen -ls'
 alias 'sr'='screen -r '
 
-# shortcut for tensorboard
+# shortcut for tensorboard ssh connection
 # tb <directory>
 alias tb='tensorboard --port=6007 --logdir' # run locally
 alias tb3='ssh -N -L localhost:6006:localhost:6007 pengfei@192.168.32.31'
 alias tb5='ssh -N -L localhost:6006:localhost:6007 pengfei@192.168.32.32'
 
-# shortcut for code server
+# shortcut for code server ssh connection
 alias 'code'='~/code-server/code-server'
 alias 'code0'='ssh -N -L localhost:8080:localhost:8080 pengfei@172.17.240.117'
 alias 'code3'='ssh -N -L localhost:8080:localhost:8080 pengfei@192.168.32.31'
 alias 'code4'='ssh -N -L localhost:8080:localhost:8080 pengfei@172.17.240.228'
 alias 'code5'='ssh -N -L localhost:8080:localhost:8080 pengfei@192.168.32.32'
+
+# for server jupyter notebook connection
+alias 'notebook'='jupyter notebook --no-browser --port=8889' # run locally
+alias 'server0'='ssh pengfei@172.17.240.117'
+alias 'server3'='ssh pengfei@192.168.32.31'
+alias 'server4'='ssh pengfei@172.17.240.228'
+alias 'server5'='ssh pengfei@192.168.32.32'
+alias 'notebook0'='ssh -N -L localhost:8888:localhost:8889 pengfei@172.17.240.117'
+alias 'notebook3'='ssh -N -L localhost:8888:localhost:8889 pengfei@192.168.32.31'
+alias 'notebook5'='ssh -N -L localhost:8888:localhost:8889 pengfei@192.168.32.32'
