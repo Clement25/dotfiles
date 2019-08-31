@@ -172,4 +172,3 @@ alias 'server4'='ssh pengfei@172.17.240.228'
 alias 'server5'='ssh pengfei@192.168.32.32'
 alias 'notebook0'='ssh -N -L localhost:8888:localhost:8889 pengfei@172.17.240.117'
 alias 'notebook3'='ssh -N -L localhost:8888:localhost:8889 pengfei@192.168.32.31'
-a
