@@ -62,7 +62,7 @@ if [[ "$OSTYPE" == "linux-gnu" ]]; then
     fi
 
     read -p "Sudo Install openssh-server? y or n?" ssh
-    if [ "$efficiency" == "y" ]; then
+    if [ "$ssh" == "y" ]; then
         sudo apt-get update
         sudo apt-get install openssh-server
         sudo ufw allow 22
