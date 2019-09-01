@@ -59,6 +59,17 @@ if [[ "$OSTYPE" == "linux-gnu" ]]; then
         # sudo apt-get install vman
     else
         echo "Skipped Installing software for efficency"
+    fi
+
+    read -p "Sudo Install openssh-server? y or n?" ssh
+    if [ "$efficiency" == "y" ]; then
+        sudo apt-get update
+        sudo apt-get install openssh-server
+        sudo ufw allow 22
+        echo "SSH host have setup"
+    else
+        echo "Skipped Setting up ssh connection"
+    fi
 
 
     read -p "Install miniconda3, y or n?" miniconda
@@ -78,8 +89,8 @@ if [[ "$OSTYPE" == "linux-gnu" ]]; then
     if [ "$vim" == "y" ]; then
         echo "Cloning Vim -- Vundle"
         git clone https://github.com/VundleVim/Vundle.vim.git ~/.vim/bundle/Vundle.vim
-	echo "Vundle Installed"
-	echo "Run ':PluginInstall' to install vim plugins"
+        echo "Vundle Installed"
+        echo "Run ':PluginInstall' to install vim plugins"
     else
         echo "Skipped cloning VimVundle"
     fi
@@ -89,7 +100,6 @@ if [[ "$OSTYPE" == "linux-gnu" ]]; then
 
     echo "Reload .bashrc file just created"
     source .bashrc
-    fi
 
 # ------- mac setup --------------
 elif [[ "$OSTYPE" == "darwin"* ]]; then
