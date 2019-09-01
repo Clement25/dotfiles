@@ -179,6 +179,8 @@ alias '....'='cd ../../..'
 alias 'cl'='clear'
 alias 'brc'='source ~/.bashrc'
 alias 'zrc'='source ~/.zshrc'
+alias 'ci'='conda install'
+alias 'ca'='conda activate'
 
 # shortcut for tmux
 alias 'new'='tmux new-session -s '
@@ -205,10 +207,13 @@ alias 'code5'='ssh -N -L localhost:8080:localhost:8080 pengfei@192.168.32.32'
 
 # for server jupyter notebook connection
 alias 'notebook'='jupyter notebook --no-browser --port=8889' # run locally
+alias 'notebook0'='ssh -N -L localhost:8888:localhost:8889 pengfei@172.17.240.117'
+alias 'notebook3'='ssh -N -L localhost:8888:localhost:8889 pengfei@192.168.32.31'
+alias 'notebook5'='ssh -N -L localhost:8888:localhost:8889 pengfei@192.168.32.32'
+
+# ssh connection
+alias 'hong-18'='ssh emrys@10.12.218.175'
 alias 'server0'='ssh pengfei@172.17.240.117'
 alias 'server3'='ssh pengfei@192.168.32.31'
 alias 'server4'='ssh pengfei@172.17.240.228'
 alias 'server5'='ssh pengfei@192.168.32.32'
-alias 'notebook0'='ssh -N -L localhost:8888:localhost:8889 pengfei@172.17.240.117'
-alias 'notebook3'='ssh -N -L localhost:8888:localhost:8889 pengfei@192.168.32.31'
-alias 'notebook5'='ssh -N -L localhost:8888:localhost:8889 pengfei@192.168.32.32'

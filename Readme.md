@@ -17,3 +17,6 @@ To show all the custom alias\
 
 To show all the custom alias related to git\
 `git alias` 
+
+For nvidia and docker one command installation:
+https://getcuda.ml/
