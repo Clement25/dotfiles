@@ -19,7 +19,7 @@ import re
 import subprocess
 import select
 import argparse
-from termcolor import colored
+### from termcolor import colored
 
 MEMORY_FREE_RATIO = 0.05
 MEMORY_MODERATE_RATIO = 0.9
@@ -72,8 +72,10 @@ def colorize(_lines):
                 is_free = True
 
             c = 'red' if is_high else ('yellow' if is_moderate else 'green')
-            _lines[i] = colored(_lines[i], c)
-            _lines[i-1] = colored(_lines[i-1], c)
+            ### _lines[i] = colored(_lines[i], c)
+            ### _lines[i-1] = colored(_lines[i-1], c)
+            _lines[i] = _lines[i]
+            _lines[i-1] = _lines[i-1]
 
     return _lines
 

@@ -12,6 +12,7 @@ alias 'brc'='source ~/.bashrc'
 alias 'zrc'='source ~/.zshrc'
 alias 'ci'='conda install'
 alias 'ca'='conda activate'
+alias 'dotfiles'='cd ~/Github/dotfiles'
 
 # shortcut for tmux
 alias 'new'='tmux new-session -s '

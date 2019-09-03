@@ -155,8 +155,9 @@ export CUDA_DEVICE_ORDER=PCI_BUS_ID
 alias 'checkpid'='ps -u -p'
 
 # check gpu usage
-#alias 'nvtop'="bash ~/Github/dotfiles/.nvtop.sh"
-alias 'nvtop'="python ~/Github/dotfiles/.nvidia-htop.py --color -l 100"
+# alias 'nvtop'="bash ~/Github/dotfiles/.nvtop.sh"
+# add -l 100 for longer line number
+alias 'checkcuda'="python ~/Github/dotfiles/.nvidia-htop.py"
 
 # cuda version
 alias 'nvv'='nvcc --version'

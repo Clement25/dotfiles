@@ -20,3 +20,6 @@ To show all the custom alias related to git\
 
 For nvidia and docker one command installation:
 https://getcuda.ml/
+
+To install nvtop for better nvidia-smi:
+https://github.com/Syllo/nvtop
