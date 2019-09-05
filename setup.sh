@@ -28,19 +28,19 @@ if [[ "$OSTYPE" == "linux-gnu" ]]; then
         mv .ssh .ssh_old
     fi
 
-    read -p "Create symlink from Github/dotfiles, y or n?" create
+    read -p "Create symlink from Github/.dotfiles, y or n?" create
     if [ "$create" == "y" ]; then
-        ln -s Github/dotfiles/.bashrc .
-        ln -s Github/dotfiles/.gitconfig .
-        ln -s Github/dotfiles/.gitignore_global .
-        ln -s Github/dotfiles/.pdbrc .
-        ln -s Github/dotfiles/.pdbrc.py .
-        ln -s Github/dotfiles/.tmux.conf .
-        ln -s Github/dotfiles/.toprc .
-        ln -s Github/dotfiles/.vimrc .
-        ln -s Github/dotfiles/.ssh .
-        ln -s Github/dotfiles/.inputrc .
-        ln -s Github/dotfiles/.nvtop.sh .
+        ln -s Github/.dotfiles/.bashrc .
+        ln -s Github/.dotfiles/.gitconfig .
+        ln -s Github/.dotfiles/.gitignore_global .
+        ln -s Github/.dotfiles/.pdbrc .
+        ln -s Github/.dotfiles/.pdbrc.py .
+        ln -s Github/.dotfiles/.tmux.conf .
+        ln -s Github/.dotfiles/.toprc .
+        ln -s Github/.dotfiles/.vimrc .
+        ln -s Github/.dotfiles/.ssh .
+        ln -s Github/.dotfiles/.inputrc .
+        ln -s Github/.dotfiles/.nvtop.sh .
         bind -f  ~/.inputrc
         echo "Sym Links created"
     else 
@@ -104,18 +104,18 @@ if [[ "$OSTYPE" == "linux-gnu" ]]; then
 # ------- mac setup --------------
 elif [[ "$OSTYPE" == "darwin"* ]]; then
     echo "Detected Darwin system"
-    echo "Create symlink from Github/dotfiles"
-    ln -s Github/dotfiles/.zshrc .
-    ln -s Github/dotfiles/.gitconfig .
-    ln -s Github/dotfiles/.gitignore_global .
-    ln -s Github/dotfiles/.pdbrc .
-    ln -s Github/dotfiles/.pdbrc.py .
-    ln -s Github/dotfiles/.tmux.conf .
-    ln -s Github/dotfiles/.toprc .
-    ln -s Github/dotfiles/.vimrc .
-    ln -s Github/dotfiles/.ssh .
-    ln -s Github/dotfiles/.inputrc .
-    ln -s Github/dotfiles/.nvtop.sh .
+    echo "Create symlink from Github/.dotfiles"
+    ln -s Github/.dotfiles/.zshrc .
+    ln -s Github/.dotfiles/.gitconfig .
+    ln -s Github/.dotfiles/.gitignore_global .
+    ln -s Github/.dotfiles/.pdbrc .
+    ln -s Github/.dotfiles/.pdbrc.py .
+    ln -s Github/.dotfiles/.tmux.conf .
+    ln -s Github/.dotfiles/.toprc .
+    ln -s Github/.dotfiles/.vimrc .
+    ln -s Github/.dotfiles/.ssh .
+    ln -s Github/.dotfiles/.inputrc .
+    ln -s Github/.dotfiles/.nvtop.sh .
 
 
 

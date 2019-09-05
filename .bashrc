@@ -168,10 +168,9 @@ alias 'cudnn-version'='cat /usr/local/cuda/include/cudnn.h | grep CUDNN_MAJOR -A
 
 # ------------------- cuda related --------------------------------------------------------------------
 
-# auto-completion
-bind "TAB:menu-complete"
-bind "set show-all-if-ambiguous on"
-bind 'TAB':menu-complete
+# # for auto-completion
+# bind "TAB:menu-complete"
+# bind "set show-all-if-ambiguous on"
 
 # load common configs
 source ~/Github/.dotfiles/.commonrc
