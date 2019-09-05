@@ -155,9 +155,9 @@ export CUDA_DEVICE_ORDER=PCI_BUS_ID
 alias 'checkpid'='ps -u -p'
 
 # check gpu usage
-# alias 'nvtop'="bash ~/Github/dotfiles/.nvtop.sh"
+# alias 'nvtop'="bash ~/Github/.dotfiles/.nvtop.sh"
 # add -l 100 for longer line number
-alias 'checkcuda'="python ~/Github/dotfiles/.nvidia-htop.py"
+alias 'checkcuda'="python ~/Github/.dotfiles/.nvidia-htop.py"
 
 # cuda version
 alias 'nvv'='nvcc --version'
@@ -174,5 +174,5 @@ bind "set show-all-if-ambiguous on"
 bind 'TAB':menu-complete
 
 # load common configs
-source ~/Github/dotfiles/.commonrc
+source ~/Github/.dotfiles/.commonrc
 
