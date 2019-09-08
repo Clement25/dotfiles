@@ -264,9 +264,6 @@ nmap <F5> :set rnu! <CR>
 let mapleader = '\'
 map <Leader>ve :sp $HOME/.vimrc<CR>
 map <Leader>vs :source $HOME/.vimrc<CR>
-" nmap <leader>] <C-i>
-" nmap <Leader>t <C-]>
-" nmap <leader>[ <C-o>
 nmap <Leader>d Oimport pdb; pdb.set_trace()<Esc>
 
 " ----- JISTR/VIWGM-NERDTREE-TABS -------------
@@ -274,22 +271,11 @@ nmap <Leader>d Oimport pdb; pdb.set_trace()<Esc>
 nmap <silent> <leader>n :NERDTreeTabsToggle<CR>
 """ --------- END ---------------------------
 
-
-
 """ ------ SEARCH ----------------------------
 let g:ag_working_path_mode="r"
 nmap <leader>f :Files<space>
 nmap <leader>g :Ag<space>
 """ ------- END ------------------------------
-
-
-"---------- OPEN AND CLOSE FUNCTIONS ---------
-nmap <leader>c zc
-nmap <leader>o zo
-" --------- END ------------------------------
-
-
-
 
 "---------- SPLIT NAVIGATIONS ----------------
 nnoremap <C-J> <C-W><C-J>
@@ -369,7 +355,9 @@ let g:pymode_lint_write = 0
 "  zo - opens folds
 "  zc - closes fold
 "  :set foldmethod=syntax (remove all folding)
-"  zR 			  (remove all folding)
+"  zi                     (remove all folding)
+"  zR                     (open all folding)
+"  ZM                     (close all folding)
 "
 "
 "  --- AUTOCOMPLETION
