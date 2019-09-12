@@ -172,6 +172,9 @@ alias 'cudnn-version'='cat /usr/local/cuda/include/cudnn.h | grep CUDNN_MAJOR -A
 # bind "TAB:menu-complete"
 # bind "set show-all-if-ambiguous on"
 
+# for code-server auto completion
+alias 'code'='~/code-server/code-server --port=8080 --no-auth '
+
 # load common configs
 source ~/Github/.dotfiles/.commonrc
 
