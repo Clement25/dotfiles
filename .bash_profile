@@ -16,4 +16,7 @@ alias la='ls -A'
 alias l='ls -CF'
 
 
+# Conda installer
+export PATH="~/miniconda3/bin:$PATH"
+
 source  ~/Github/.dotfiles/.commonrc

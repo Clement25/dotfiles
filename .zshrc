@@ -100,8 +100,8 @@ alias ohmyzsh="mate ~/.oh-my-zsh"
 # adding for multiple colors by Emrys
 export TERM="xterm-256color"
 
-# added by Anaconda3 5.2.0 installer
-export PATH="/Users/emrys/anaconda3/bin:$PATH"
+# Conda installer
+export PATH="~/miniconda3/bin:$PATH"
 
 # Add Visual Studio Code(code) by Emrys
 export PATH="$PATH:/Users/emrys/Applications/Visual Studio Code.app/Contents/Resources/app/bin"
