@@ -10,3 +10,4 @@ rm ~/.ssh
 rm ~/.inputrc 
 rm ~/.nvtop.sh 
 rm ~/.zshrc
+rm ~/.bash_profile

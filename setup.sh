@@ -116,15 +116,16 @@ elif [[ "$OSTYPE" == "darwin"* ]]; then
     ln -s Github/.dotfiles/.ssh .
     ln -s Github/.dotfiles/.inputrc .
     ln -s Github/.dotfiles/.nvtop.sh .
+    ln -s Github/.dotfiles/.bash_profile .
 
 
 
     read -p "Install miniconda3, y or n?" miniconda
     if [ "$miniconda" == "y" ]; then
         echo "Installing miniconda"
-        wget https://repo.anaconda.com/miniconda/Miniconda3-latest-Linux-x86_64.sh
-        bash Miniconda3-latest-Linux-x86_64.sh
-        rm Miniconda3-latest-Linux-x86_64.sh
+        wget https://repo.anaconda.com/miniconda/Miniconda3-latest-MacOSX-x86_64.sh
+        bash Miniconda3-latest-MacOSX-x86_64.sh
+        rm Miniconda3-latest-MacOSX-x86_64.sh
     else 
         echo "Skipped installing miniconda"
     fi
