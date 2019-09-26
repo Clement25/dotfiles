@@ -15,6 +15,11 @@ alias ll='ls -alF'
 alias la='ls -A'
 alias l='ls -CF'
 
-source  ~/Github/.dotfiles/.commonrc
+if [ -f ~/.bash_alias ]; then
+    . ~/.bash_alias
+fi
 
+if [ -f ~/Github/.dotfiles/.commonrc ]; then
+    . ~/Github/.dotfiles/.commonrc
+fi
 

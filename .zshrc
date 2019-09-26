@@ -122,4 +122,10 @@ export NVM_DIR="$HOME/.nvm"
 [ -s "$NVM_DIR/bash_completion" ] && \. "$NVM_DIR/bash_completion"  # This loads nvm bash_completion
 
 # load common configs
-source ~/Github/.dotfiles/.commonrc
+if [ -f ~/.bash_alias ]; then
+    . ~/.bash_alias
+fi
+
+if [ -f ~/Github/.dotfiles/.commonrc ]; then
+    . ~/Github/.dotfiles/.commonrc
+fi
