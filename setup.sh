@@ -117,6 +117,7 @@ elif [[ "$OSTYPE" == "darwin"* ]]; then
     ln -s Github/.dotfiles/.inputrc .
     ln -s Github/.dotfiles/.nvtop.sh .
     ln -s Github/.dotfiles/.bash_profile .
+    ln -s Github/.dotfiles/.profile .
 
 
 
