@@ -157,6 +157,6 @@ alias 'cudnn-version'='cat /usr/local/cuda/include/cudnn.h | grep CUDNN_MAJOR -A
 # bind "set show-all-if-ambiguous on"
 
 # for code-server auto completion
-alias 'code'='~/code-server/code-server --port=8080 --no-auth '
+alias 'code'='~/code-server/code-server --port=8080 --no-auth ' # export PASSWORD=yourpassword
 alias 'notebook'='jupyter notebook --no-browser --port=8889' # run locally
-
+alias tb='tensorboard --port=6007 --logdir' # run locally # Tensorboard Usage: tb <directory>
