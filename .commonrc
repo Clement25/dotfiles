@@ -1,6 +1,6 @@
 # vman page for vim superman
-export PATH="$PATH:$HOME/.vim/bundle/vim-superman/bin"
-complete -o default -o nospace -F _man vman
+# export PATH="$PATH:$HOME/.vim/bundle/vim-superman/bin"
+# complete -o default -o nospace -F _man vman
 # you can use vman for better man page
 
 # >>> conda initialize >>>
@@ -65,5 +65,3 @@ alias cd5='ssh -N -L $cdmap $statnlp5'
 alias nb0='ssh -N -L $nbmap $statnlp0' 
 alias nb3='ssh -N -L $nbmap $statnlp3'
 alias nb5='ssh -N -L $nbmap $statnlp5'
-
-
