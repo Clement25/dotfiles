@@ -40,28 +40,3 @@ alias 'ta'='tmux a'
 # shortcut for screen
 alias 'sl'='screen -ls'
 alias 'sr'='screen -r '
-
-
-
-# Addresses
-hong_mac='emrys@10.12.88.196'
-hong_18='emrys@10.12.218.175'
-statnlp0='pengfei@172.17.240.117'
-statnlp3='pengfei@192.168.32.31'
-statnlp4='pengfei@172.17.240.228'
-statnlp5='pengfei@192.168.32.32'
-
-
-# shortcut for tensorboard ssh connection
-tbmap='localhost:6006:localhost:6007'
-cdmap='localhost:8080:localhost:8080'
-nbmap='localhost:8888:localhost:8889'
-alias tb3='ssh -N -L $tbmap $statnlp3'
-alias tb5='ssh -N -L $tbmap $statnlp5'
-alias cd0='ssh -N -L $cdmap $statnlp0' 
-alias cd3='ssh -N -L $cdmap $statnlp3'
-alias cd4='ssh -N -L $cdmap $statnlp4'
-alias cd5='ssh -N -L $cdmap $statnlp5'
-alias nb0='ssh -N -L $nbmap $statnlp0' 
-alias nb3='ssh -N -L $nbmap $statnlp3'
-alias nb5='ssh -N -L $nbmap $statnlp5'
