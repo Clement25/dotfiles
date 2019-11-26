@@ -30,6 +30,7 @@ alias 'ci'='conda install'
 alias 'ca'='conda activate'
 alias 'lsconda'='conda info --envs'
 alias 'dotfiles'='cd ~/Github/.dotfiles'
+alias 't'='ctags -R .'
 
 # shortcut for tmux
 alias 'new'='tmux new-session -s '
