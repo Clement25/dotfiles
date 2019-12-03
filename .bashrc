@@ -125,8 +125,8 @@ fi
 
 # ====================== cuda related ================================================================
 # cuda related path added by emrys
-# export PATH=/usr/local/cuda-9.1/bin${PATH:+:${PATH}}
-# export LD_LIBRARY_PATH=/usr/local/cuda-9.1/lib64${LD_LIBRARY_PATH:+:${LD_LIBRARY_PATH}}
+# export PATH=/usr/local/cuda-10.0/bin:/usr/local/cuda-10.0/NsightCompute-1.0${PATH:+:${PATH}}
+# export LD_LIBRARY_PATH=/usr/local/cuda-10.0/lib64${LD_LIBRARY_PATH:+:${LD_LIBRARY_PATH}}
 
 # set gpu device order as their number instead of the fastest
 export CUDA_DEVICE_ORDER=PCI_BUS_ID
@@ -138,14 +138,15 @@ export CUDA_DEVICE_ORDER=PCI_BUS_ID
 # checkpid <pid>
 alias 'checkpid'='ps -u -p'
 
-# check gpu usage
-alias 'checkcuda'="bash ~/Github/.dotfiles/.nvtop.sh"
-# add -l 100 for longer line number
-alias 'checkcuda'="python ~/Github/.dotfiles/.nvidia-htop.py"
+if ! [ -x "$(command -v nvtop)" ]; then
+ # add -l 100 for longer line number
+ alias 'nvtop'="python ~/Github/.dotfiles/.nvidia-htop.py"
+ exit 1
+fi
 
 # cuda version
 alias 'nvv'='nvcc --version'
-alias 'nv-version'='cat /usr/local/cuda/version.txt'
+alias 'nvv'='cat /usr/local/cuda/version.txt'
 
 # cudnn version
 alias 'cudnn-version'='cat /usr/local/cuda/include/cudnn.h | grep CUDNN_MAJOR -A 2'
