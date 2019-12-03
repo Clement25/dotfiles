@@ -134,9 +134,7 @@ export CUDA_DEVICE_ORDER=PCI_BUS_ID
 # assign a specific cuda number
 # export CUDA_VISIBLE_DEVICES=0
 
-# check the user and command of the pid
-# checkpid <pid>
-alias 'checkpid'='ps -u -p'
+
 
 if ! [ -x "$(command -v nvtop)" ]; then
  # add -l 100 for longer line number
