@@ -139,7 +139,6 @@ export CUDA_DEVICE_ORDER=PCI_BUS_ID
 if ! [ -x "$(command -v nvtop)" ]; then
  # add -l 100 for longer line number
  alias 'nvtop'="python ~/Github/.dotfiles/.nvidia-htop.py"
- exit 1
 fi
 
 # cuda version
