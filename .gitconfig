@@ -21,6 +21,7 @@
         rmc = rm --cached 
         addt = !sh -c 'git ls-files | grep \"\\.$1*\" | xargs git add' - 
         file-change = "!change() { git diff --name-status \"$1^\" \"$1\"; }; change"
+        nb = "mergetool --tool=nbdime"
 
 
 [push]

@@ -36,6 +36,8 @@ alias 'port'='lsof -n -i'
 # check the user and command of the pid
 # checkpid <pid>
 alias 'checkpid'='ps -u -p'
+# nbdime for merge
+alias 'mergenb'='nbdime config-git --enable --global'
 
 # shortcut for tmux
 alias 'new'='tmux new-session -s '
