@@ -31,6 +31,8 @@ alias 'ca'='conda activate'
 alias 'lsconda'='conda info --envs'
 alias 'dotfiles'='cd ~/Github/.dotfiles'
 alias 't'='ctags -R .'
+alias 'rmr'='rm -r'
+alias 'rmrf'='rm -rf'
 # port 8888
 alias 'port'='lsof -n -i'
 # check the user and command of the pid
