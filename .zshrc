@@ -105,15 +105,15 @@ export TERM="xterm-256color"
 # path for JAVA_HOME by Emrys
 export JAVA_HOME=$(/usr/libexec/java_home)
 
-# added for instance(exclusive-image-kaggle) in google cloud by Emrys
-alias "googlecloud"="ssh -i ./.ssh/my-ssh-key hongpengfei_emrys@35.236.162.13"
-
 # added path for python file path
 export FLASK_APP=application.py
 
 # added for node
 export PATH="/usr/local/opt/icu4c/bin:$PATH"
 export PATH="/usr/local/opt/icu4c/sbin:$PATH"
+
+# Added for nbconvert latex version
+# export PATH="/Library/TeX/Distributions/.DefaultTeX/Contents/Programs/texbin:$PATH"
 
 # installs the nvm
 export NVM_DIR="$HOME/.nvm"

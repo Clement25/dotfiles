@@ -114,3 +114,7 @@ desktop.ini
 .idea
 .iml
 *.sublime-workspace
+
+# Add ons #
+###########
+node_modules/
