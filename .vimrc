@@ -10,7 +10,7 @@ set directory=~/vimfiles/tmp,.
 set expandtab
 set backspace=indent,eol,start
 set ruler
-set number
+set number relativenumber
 set showcmd
 set incsearch
 set hlsearch
