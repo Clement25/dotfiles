@@ -132,6 +132,9 @@ set belloff+=ctrlg
 nmap <silent> <buffer> K <Plug>(kite-docs)
 nmap <F1> :set statusline=%<%f\ %h%m%r%{kite#statusline()}%=%-14.(%l,%c%V%)\ %P <CR>
 imap <F2> <C-X><C-U>
+let g:KiteShowPopularPatterns=1
+nmap <F6> :KiteShowPopularPatterns <CR>
+nmap <F7> :KiteHidePopularPatterns <CR>
 
 
 
