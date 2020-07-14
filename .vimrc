@@ -29,28 +29,6 @@ call vundle#begin()
 Plugin 'VundleVim/Vundle.vim'
 
 
-" --------- tabnine -------------- "
-Plugin 'zxqfl/tabnine-vim'
-
-" --------- Kite -------------------"
-"  https://help.kite.com/article/73-using-the-vim-plugin
-"  https://kite.com/linux/
-"  https://github.com/kiteco/vim-plugin
-"  https://github.com/kiteco/vim-plugin/blob/master/DEVELOPMENT.md
-let g:kite_supported_languages = ['python']
-let g:kite_auto_complete=0
-" let g:kite_snippets=0
-let g:kite_tab_complete=1
-set completeopt+=menuone   " show the popup menu even when there is only 1 match
-set completeopt+=noinsert  " don't insert any text until user chooses a match
-set completeopt-=longest   " don't insert the longest common text
-set completeopt+=preview
-autocmd CompleteDone * if !pumvisible() | pclose | endif
-set belloff+=ctrlg 
-set statusline=%<%f\ %h%m%r%{kite#statusline()}%=%-14.(%l,%c%V%)\ %P
-set laststatus=2  " always display the status line
-nmap <silent> <buffer> K <Plug>(kite-docs)
-
 " --------- for folding functions ------------- "
 set foldcolumn=3
 Plugin 'tmhedberg/SimpylFold'
@@ -74,7 +52,7 @@ Plugin 'vim-syntastic/syntastic'
 Plugin 'xolox/vim-misc'
 Plugin 'xolox/vim-easytags'
 Plugin 'majutsushi/tagbar'
-" Plugin 'ctrlpvim/ctrlp.vim'
+Plugin 'ctrlpvim/ctrlp.vim'
 
 
 " ----- Working with Git ----------------------------------------------
@@ -131,17 +109,45 @@ Plugin 'christoomey/vim-tmux-navigator'
 "nmap <silent> <leader>g :TestVisit<CR>
 " --- install to list header file for c/cpp
 " Plugin 'vim-scripts/a.vim'
+
+" --------- tabnine -------------- "
+Plugin 'zxqfl/tabnine-vim'
+
+" --------- Kite -------------------"
+"  https://help.kite.com/article/73-using-the-vim-plugin
+"  https://kite.com/linux/
+"  https://github.com/kiteco/vim-plugin & https://github.com/kiteco/vim-plugin/blob/master/DEVELOPMENT.md
+"  https://help.kite.com/category/47-vim-integration
+let g:kite_supported_languages = ['python']
+let g:kite_auto_complete=1
+let g:kite_snippets=1
+let g:kite_tab_complete=1
+" let g:kite_documentation_continual=1
+set completeopt+=menuone   " show the popup menu even when there is only 1 match
+set completeopt+=noinsert  " don't insert any text until user chooses a match
+set completeopt-=longest   " don't insert the longest common text
+set completeopt+=preview
+autocmd CompleteDone * if !pumvisible() | pclose | endif
+set belloff+=ctrlg 
+nmap <silent> <buffer> K <Plug>(kite-docs)
+nmap <F1> :set statusline=%<%f\ %h%m%r%{kite#statusline()}%=%-14.(%l,%c%V%)\ %P <CR>
+imap <F2> <C-X><C-U>
+
+
+
+
+
 call vundle#end()            " required
 
 
 """ highlight redundant spaces in python
 " let python_highlight_all=1
 "
-"------ python powerline_setup ---------
+"------ python powerline_setup, useless since I already have airline ---------
 "python3 import sys; sys.path.append("/home/<username>/anaconda3/lib/python3.7/site-packages")
-"python3 from powerline.vim import setup as powerline_setup
-"python3 powerline_setup()
-"python3 del powerline_setup
+"python from powerline.vim import setup as powerline_setup
+"python powerline_setup()
+"python del powerline_setup
 
 """ PYTHON RELATED SETTINGS END
 
@@ -294,9 +300,9 @@ nmap <silent> <leader>n :NERDTreeTabsToggle<CR>
 """ --------- END ---------------------------
 
 """ ------ SEARCH ----------------------------
-let g:ag_working_path_mode="r"
-nmap <leader>f :Files<space>
-nmap <leader>g :Ag<space>
+" let g:ag_working_path_mode="r"
+" nmap <leader>f :Files<space>
+" nmap <leader>g :Ag<space>
 """ ------- END ------------------------------
 
 "---------- SPLIT NAVIGATIONS ----------------
