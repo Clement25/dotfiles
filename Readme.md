@@ -9,7 +9,7 @@ put all of your configuration file in dotfiles repo
 cd
 mkdir Github && cd Github
 git clone https://github.com/Emrys-Hong/dotfiles .dotfiles
-cd .dotfiles && bash setup.sh
+cd .dotfiles && sudo bash setup.sh
 ```
 
 

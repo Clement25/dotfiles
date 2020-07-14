@@ -6,9 +6,12 @@
         a = add .
         ci = commit 
         co = checkout
-        lo = log --graph --pretty=format:'%Cred%h%Creset -%C(yellow)%d%Creset %s %Cgreen(%cr) %C(cyan)<%an>%Creset' --abbrev-commit --date=relative
+        l = log --graph --pretty=format:'%Cred%h%Creset -%C(yellow)%d%Creset %s %Cgreen(%cr) %C(cyan)<%an>%Creset' --abbrev-commit --date=relative
+        lo = log --pretty=oneline --since='2 days ago' --color --graph --abbrev-commit 
+        lod = log -p -1 --color --graph --pretty=format:'%Cred%h%Creset -%C(yellow)%d%Creset %s %Cgreen(%ci) %C(bold blue) <%an>%Creset' --abbrev-commit
         s = "!git status"
         d = difftool -y
+        m = mergetool -y
         cre = config credential.helper store
         p = "!git rev-parse --abbrev-ref HEAD | xargs git push origin"
         pl = "!git rev-parse --abbrev-ref HEAD | xargs git pull origin"
@@ -23,13 +26,15 @@
         file-change = "!change() { git diff --name-status \"$1^\" \"$1\"; }; change"
         nb = "mergetool --tool=nbdime"
         vimdiff = "!vim -p `git diff --name-only`"
+        br = branch
 
 
 [push]
         default = simple
 [core]
         editor = vim
-        excludesfile = ~/.gitignore_global
+        excludesfile = ~/Github/.dotfiles/.gitignore_global
+        attributesfile = ~/Github/.dotfiles/.gitattributes_global
 
 [color]
     branch = auto
