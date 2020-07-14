@@ -28,6 +28,9 @@ if [ -f $HOME/squashfs-root/AppRun ]; then
         alias 'vi'='~/squashfs-root/AppRun'
 fi
 
+if [ -x "$(command -v nvim)" ]; then
+ alias 'vi'="nvim"
+fi
 
 # autojump
 [[ -s $HOME/.autojump/etc/profile.d/autojump.sh ]] && source $HOME/.autojump/etc/profile.d/autojump.sh
@@ -37,16 +40,11 @@ fi
 export VISUAL=vim
 export EDITOR="$VISUAL"
 
-# append history command instead of overwriting it
-shopt -s histappend
 
 if [ -f ~/.localrc ]; then
     . ~/.localrc
 fi
 
-
-# source ~/.inputrc
-bind -f ~/.inputrc
 
 
 # daily commands

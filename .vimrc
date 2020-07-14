@@ -35,8 +35,21 @@ Plugin 'zxqfl/tabnine-vim'
 " --------- Kite -------------------"
 "  https://help.kite.com/article/73-using-the-vim-plugin
 "  https://kite.com/linux/
-"  https://github.com/kiteco/vim-plugin/blob/master/DEVELOPMENT.md
 "  https://github.com/kiteco/vim-plugin
+"  https://github.com/kiteco/vim-plugin/blob/master/DEVELOPMENT.md
+let g:kite_supported_languages = ['python']
+let g:kite_auto_complete=0
+" let g:kite_snippets=0
+let g:kite_tab_complete=1
+set completeopt+=menuone   " show the popup menu even when there is only 1 match
+set completeopt+=noinsert  " don't insert any text until user chooses a match
+set completeopt-=longest   " don't insert the longest common text
+set completeopt+=preview
+autocmd CompleteDone * if !pumvisible() | pclose | endif
+set belloff+=ctrlg 
+set statusline=%<%f\ %h%m%r%{kite#statusline()}%=%-14.(%l,%c%V%)\ %P
+set laststatus=2  " always display the status line
+nmap <silent> <buffer> K <Plug>(kite-docs)
 
 " --------- for folding functions ------------- "
 set foldcolumn=3
@@ -233,7 +246,7 @@ augroup mydelimitMate
 augroup END
 
 " better man page support
-noremap K :SuperMan <cword><CR>
+" noremap K :SuperMan <cword><CR>
 
 
 

@@ -108,6 +108,12 @@ if [ -f ~/Github/.dotfiles/.commonrc ]; then
 fi
 
 
+# append history command instead of overwriting it
+shopt -s histappend
+
+# source ~/.inputrc
+bind -f ~/.inputrc
+
 # enable programmable completion features (you don't need to enable
 # this, if it's already enabled in /etc/bash.bashrc and /etc/profile
 # sources /etc/bash.bashrc).
