@@ -10,7 +10,7 @@ set directory=~/vimfiles/tmp,.
 set expandtab
 set backspace=indent,eol,start
 set ruler
-set number
+set number relativenumber
 set showcmd
 set incsearch
 set hlsearch
@@ -28,6 +28,16 @@ call vundle#begin()
 " let Vundle manage Vundle
 Plugin 'VundleVim/Vundle.vim'
 
+
+" --------- tabnine -------------- "
+Plugin 'zxqfl/tabnine-vim'
+
+" --------- Kite -------------------"
+"  https://help.kite.com/article/73-using-the-vim-plugin
+"  https://kite.com/linux/
+"  https://github.com/kiteco/vim-plugin/blob/master/DEVELOPMENT.md
+"  https://github.com/kiteco/vim-plugin
+
 " --------- for folding functions ------------- "
 set foldcolumn=3
 Plugin 'tmhedberg/SimpylFold'
@@ -35,7 +45,7 @@ let g:SimpylFold_docstring_preview=1
 
 Plugin 'jeetsukumaran/vim-indentwise'
 Plugin 'vim-scripts/indentpython.vim'
-"Plugin 'Konfekt/FastFold'
+" Plugin 'Konfekt/FastFold'
 
 
 " ----- Making Vim look good ------------------------------------------
@@ -45,43 +55,42 @@ Plugin 'vim-airline/vim-airline'
 Plugin 'vim-airline/vim-airline-themes'
 
 " ----- Vim as a programmer's text editor -----------------------------
-Plugin 'scrooloose/nerdtree'
-Plugin 'jistr/vim-nerdtree-tabs'
+" Plugin 'scrooloose/nerdtree'
+" Plugin 'jistr/vim-nerdtree-tabs'
 Plugin 'vim-syntastic/syntastic'
 Plugin 'xolox/vim-misc'
 Plugin 'xolox/vim-easytags'
 Plugin 'majutsushi/tagbar'
-Plugin 'ctrlpvim/ctrlp.vim'
-
+" Plugin 'ctrlpvim/ctrlp.vim'
 
 
 " ----- Working with Git ----------------------------------------------
 "  show git diff with ~/-/+
 Plugin 'airblade/vim-gitgutter'
 " git commit using Gcommit
-Plugin 'tpope/vim-fugitive'
+" Plugin 'tpope/vim-fugitive'
 
 " ----- Other text editing features -----------------------------------
 " when you type an open bracket it will close for you
 Plugin 'Raimondi/delimitMate'
 
 " ----- man pages, tmux -----------------------------------------------
-Plugin 'jez/vim-superman'
+" Plugin 'jez/vim-superman'
 Plugin 'christoomey/vim-tmux-navigator'
 
 " ----- Syntax plugins ------------------------------------------------
-Plugin 'jez/vim-c0'
-Plugin 'jez/vim-ispc'
-Plugin 'kchmck/vim-coffee-script'
+" Plugin 'jez/vim-c0'
+" Plugin 'jez/vim-ispc'
+" Plugin 'kchmck/vim-coffee-script'
 
 " ----- global search plugin -----------------------------------------
 "  ------------ both of these need to install extra stuff
-Plugin 'junegunn/fzf'
-Plugin 'junegunn/fzf.vim'
-Plugin 'rking/ag.vim'
+" Plugin 'junegunn/fzf'
+" Plugin 'junegunn/fzf.vim'
+" Plugin 'rking/ag.vim'
 
 " ------- multiple cursor -------------------------
-Plugin 'terryma/vim-multiple-cursors'
+" Plugin 'terryma/vim-multiple-cursors'
 "-------<C-n> for multiple cursor
 
 " ---- Extras/Advanced plugins ----------------------------------------

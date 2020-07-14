@@ -107,10 +107,6 @@ if [ -f ~/Github/.dotfiles/.commonrc ]; then
     . ~/Github/.dotfiles/.commonrc
 fi
 
-if [ -f ~/.bash_alias ]; then
-    . ~/.bash_alias
-fi
-
 
 # enable programmable completion features (you don't need to enable
 # this, if it's already enabled in /etc/bash.bashrc and /etc/profile
@@ -141,6 +137,7 @@ if ! [ -x "$(command -v nvtop)" ]; then
  alias 'nvtop'="python ~/Github/.dotfiles/.nvidia-htop.py"
 fi
 
+
 # cuda version
 alias 'nvv'='nvcc --version'
 alias 'nvv'='cat /usr/local/cuda/version.txt'
@@ -156,5 +153,5 @@ alias 'cudnn-version'='cat /usr/local/cuda/include/cudnn.h | grep CUDNN_MAJOR -A
 
 # for code-server auto completion
 alias 'code'='~/code-server/code-server --port=8080 --no-auth ' # export PASSWORD=yourpassword
-alias 'lab'='jupyter lab --no-browser --port=8889' # run locally
+alias 'lab'='jupyter lab --no-browser --allow-root --port ' # run locally
 alias tb='tensorboard --port=6007 --logdir' # run locally # Tensorboard Usage: tb <directory>

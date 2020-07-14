@@ -18,6 +18,37 @@ fi
 unset __conda_setup
 # <<< conda initialize <<<
 
+
+# neovim settings
+if [ -f $HOME/nvim.appimage ]; then
+        alias 'vi'='./nvim.appimage'
+fi
+
+if [ -f $HOME/squashfs-root/AppRun ]; then
+        alias 'vi'='~/squashfs-root/AppRun'
+fi
+
+
+# autojump
+[[ -s $HOME/.autojump/etc/profile.d/autojump.sh ]] && source $HOME/.autojump/etc/profile.d/autojump.sh
+
+
+# set vim as the common editor
+export VISUAL=vim
+export EDITOR="$VISUAL"
+
+# append history command instead of overwriting it
+shopt -s histappend
+
+if [ -f ~/.localrc ]; then
+    . ~/.localrc
+fi
+
+
+# source ~/.inputrc
+bind -f ~/.inputrc
+
+
 # daily commands
 alias '..'='cd ..'
 alias '...'='cd ../..'
@@ -33,6 +64,7 @@ alias 'dotfiles'='cd ~/Github/.dotfiles'
 alias 't'='ctags -R .'
 alias 'rmr'='rm -r'
 alias 'rmrf'='rm -rf'
+alias 'cpr'='cp -r'
 # port 8888
 alias 'port'='lsof -n -i'
 # check the user and command of the pid
@@ -50,3 +82,9 @@ alias 'ta'='tmux a'
 # shortcut for screen
 alias 'sl'='screen -ls'
 alias 'sr'='screen -r '
+
+# pdbrc
+alias 'pi'='pip install -r ~/Github/.dotfiles/requirements.txt'
+alias 'pu'='pip uninstall -r ~/Github/.dotfiles/requirements.txt'
+
+

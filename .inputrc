@@ -1,11 +1,12 @@
 $include /etc/inputrc
 set completion-ignore-case On
 
+set editing-mode vi 
 
 # # mappings to have up and down arrow searching through history:
-# "\e[A": history-search-backward
-# "\e[B": history-search-forward
-# # mappings to have left and right arrow go left and right: 
+"\e[A": history-search-backward
+"\e[B": history-search-forward
+ # mappings to have left and right arrow go left and right: 
 # "\e[C": forward-char
 # "\e[D": backward-char
 # # mapping to have [Tab] and [Shift]+[Tab] to cycle through all the possible completions:
@@ -13,4 +14,9 @@ set completion-ignore-case On
 
 
 
+"\C-p":previous-history
+"\C-n":next-history
+"\C-a.":beginning-of-line
+"\C-e.":end-of-line
+"\C-l":clear-screen
 

@@ -1,38 +1,57 @@
 #!/bin/bash
 
+read -p "Install autojump, y or n?" autojump
+if [ "$remove" == "y" ]; then
+        git clone git://github.com/wting/autojump.git
+        cd autojump
+        ./install.py
+else 
+        echo "Skipped Installing autojump"
+fi
+        
 echo "Echo to home directory, and began installing"
 cd 
 
 # --------- Linux setup ----------
 if [[ "$OSTYPE" == "linux-gnu" ]]; then
     echo "Detected Linux system"
-    echo "mv current .file to .file_old"
     
-    FILE=.bashrc
-    if [ -f "$FILE" ]; then
-        mv .bashrc .bashrc_old
-    fi
+    read -p "remove old symlinks, y or n?" remove
+    if [ "$remove" == "y" ]; then
+        echo "mv current .file to .file_old"
+    
+        FILE=.bashrc
+        if [ -f "$FILE" ]; then
+                mv .bashrc .bashrc_old
+        fi
    
-    FILE=.gitconfig
-    if [ -f "$FILE" ]; then
-        mv .gitconfig .gitconfig_old
-    fi
+        FILE=.gitconfig
+        if [ -f "$FILE" ]; then
+                mv .gitconfig .gitconfig_old
+        fi
     
-    FILE=.vimrc
-    if [ -f "$FILE" ]; then
-        mv .vimrc .vimrc_old
-    fi
+        FILE=.vimrc
+        if [ -f "$FILE" ]; then
+                mv .vimrc .vimrc_old
+        fi
 
-    FILE=.ssh
-    if [ -f "$FILE" ]; then
-        mv .ssh .ssh_old
+        FILE=.ssh
+        if [ -f "$FILE" ]; then
+                mv .ssh .ssh_old
+        fi
+
+        FILE=.profile
+        if [ -f "$FILE" ]; then
+                rm .profile
+        fi
+    else 
+        echo "Skipped mv .file to .file_old"
     fi
 
     read -p "Create symlink from Github/.dotfiles, y or n?" create
     if [ "$create" == "y" ]; then
         ln -s Github/.dotfiles/.bashrc .
         ln -s Github/.dotfiles/.gitconfig .
-        ln -s Github/.dotfiles/.gitignore_global .
         ln -s Github/.dotfiles/.pdbrc .
         ln -s Github/.dotfiles/.pdbrc.py .
         ln -s Github/.dotfiles/.tmux.conf .
@@ -42,6 +61,8 @@ if [[ "$OSTYPE" == "linux-gnu" ]]; then
         ln -s Github/.dotfiles/.inputrc .
         ln -s Github/.dotfiles/.nvtop.sh .
         ln -s Github/.dotfiles/.profile
+        touch .localrc
+        ln -s Github/.dotfiles/.config .
         bind -f  ~/.inputrc
         echo "Sym Links created"
     else 
@@ -49,24 +70,60 @@ if [[ "$OSTYPE" == "linux-gnu" ]]; then
     fi
 
 
-    read -p "sudo apt-get tmux and ctags and vim? y or n?" efficiency
-    if [ "$efficiency" == "y" ]; then
+    read -p "apt-get tmux? y or n?" tmux
+    if [ "$tmux" == "y" ]; then
         echo "Installing software for efficiency"
-        sudo apt-get install tmux
-        sudo apt-get install ctags
-        sudo apt-get install vim
-        # sudo apt-get install fzf
-        # sudo apt-get install silversearcher-ag
-        # sudo apt-get install vman
+        apt-get install tmux
+        # apt-get install fzf
+        # apt-get install silversearcher-ag
+        # apt-get install vman
+    else
+        echo "Skipped Installing software for efficency"
+    fi
+    
+    read -p "apt-get ctags? y or n?" ctags
+    if [ "$ctags" == "y" ]; then
+        echo "Installing software for efficiency"
+        apt-get install ctags
     else
         echo "Skipped Installing software for efficency"
     fi
 
+    read -p "apt-get vim? y or n?" vim
+    if [ "$vim" == "y" ]; then
+        echo "Installing software for efficiency"
+        apt-get install vim
+    else
+        echo "Skipped Installing software for efficency"
+    fi
+
+    read -p "apt-get neovim? y or n?" neovim
+    if [ "$neovim" == "y" ]; then
+        echo "Installing software for efficiency"
+        # apt-get install neovim
+        
+        # the following source from https://github.com/neovim/neovim/wiki/Installing-Neovim#appimage-universal-linux-package & https://www.reddit.com/r/neovim/comments/f9661m/how_do_i_install_the_latest_version_of_neovim_on/
+        # neovimrc is loaded from ~/.config/nvim (http://vimcasts.org/episodes/meet-neovim/)
+        # installing vim with root access: https://askubuntu.com/questions/339/how-can-i-install-a-package-without-root-access
+        curl -LO https://github.com/neovim/neovim/releases/download/stable/nvim.appimage
+        chmod u+x nvim.appimage
+    else
+        echo "Skipped Installing software for efficency"
+    fi
+
+    read -p "apt-get bash autocomplete? y or n?" autocomplete
+    if [ "$autocomplete" == "y" ]; then 
+            echo "apt install bash-completion"
+            apt install bash-completion
+    else
+            echo "Skipped Installing software for efficiency"
+    fi
+
     read -p "Sudo Install openssh-server? y or n?" ssh
     if [ "$ssh" == "y" ]; then
-        sudo apt-get update
-        sudo apt-get install openssh-server
-        sudo ufw allow 22
+        apt-get update
+        apt-get install openssh-server
+        ufw allow 22
         echo "SSH host have setup"
     else
         echo "Skipped Setting up ssh connection"
