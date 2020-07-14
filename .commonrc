@@ -80,7 +80,7 @@ alias 'sl'='screen -ls'
 alias 'sr'='screen -r '
 
 # pdbrc
-alias 'pdb'='pip install pdbpp'
-alias 'rmpdb'='pip uninstall pdbpp'
+alias 'pi'='pip install -r ~/Github/.dotfiles/requirements.txt'
+alias 'pu'='pip uninstall -r ~/Github/.dotfiles/requirements.txt'
 
 

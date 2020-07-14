@@ -111,6 +111,13 @@ if [[ "$OSTYPE" == "linux-gnu" ]]; then
         echo "Skipped Installing software for efficency"
     fi
 
+    read -p "apt-get bash autocomplete? y or n?" autocomplete
+    if [ "$autocomplete" == "y" ]; then 
+            echo "apt install bash-completion"
+            apt install bash-completion
+    else
+            echo "Skipped Installing software for efficiency"
+    fi
 
     read -p "Sudo Install openssh-server? y or n?" ssh
     if [ "$ssh" == "y" ]; then
