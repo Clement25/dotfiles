@@ -107,8 +107,8 @@ if [ -f ~/Github/.dotfiles/.commonrc ]; then
     . ~/Github/.dotfiles/.commonrc
 fi
 
-if [ -f ~/.bash_alias ]; then
-    . ~/.bash_alias
+if [ -f ~/.localrc ]; then
+    . ~/.localrc
 fi
 
 

@@ -61,6 +61,7 @@ if [[ "$OSTYPE" == "linux-gnu" ]]; then
         ln -s Github/.dotfiles/.inputrc .
         ln -s Github/.dotfiles/.nvtop.sh .
         ln -s Github/.dotfiles/.profile
+        ln -s Github/.dotfiles/.localrc .
         bind -f  ~/.inputrc
         echo "Sym Links created"
     else 
