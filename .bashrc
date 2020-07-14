@@ -107,10 +107,6 @@ if [ -f ~/Github/.dotfiles/.commonrc ]; then
     . ~/Github/.dotfiles/.commonrc
 fi
 
-if [ -f ~/.localrc ]; then
-    . ~/.localrc
-fi
-
 
 # enable programmable completion features (you don't need to enable
 # this, if it's already enabled in /etc/bash.bashrc and /etc/profile
@@ -140,6 +136,7 @@ if ! [ -x "$(command -v nvtop)" ]; then
  # add -l 100 for longer line number
  alias 'nvtop'="python ~/Github/.dotfiles/.nvidia-htop.py"
 fi
+
 
 # cuda version
 alias 'nvv'='nvcc --version'

@@ -18,15 +18,32 @@ fi
 unset __conda_setup
 # <<< conda initialize <<<
 
+
+# neovim settings
+if [ -f $HOME/nvim.appimage ]; then
+        alias 'vi'='./nvim.appimage'
+fi
+
+if [ -f $HOME/squashfs-root/AppRun ]; then
+        alias 'vi'='~/squashfs-root/AppRun'
+fi
+
+
 # autojump
 [[ -s $HOME/.autojump/etc/profile.d/autojump.sh ]] && source $HOME/.autojump/etc/profile.d/autojump.sh
+
 
 # append history command instead of overwriting it
 shopt -s histappend
 
-# Enter <ESC> to enter vim mode to modify command
-# hit v to open full screen vim to edit command
-# set -o vi
+if [ -f ~/.localrc ]; then
+    . ~/.localrc
+fi
+
+
+# source ~/.inputrc
+bind -f ~/.inputrc
+
 
 # daily commands
 alias '..'='cd ..'

@@ -61,7 +61,8 @@ if [[ "$OSTYPE" == "linux-gnu" ]]; then
         ln -s Github/.dotfiles/.inputrc .
         ln -s Github/.dotfiles/.nvtop.sh .
         ln -s Github/.dotfiles/.profile
-        ln -s Github/.dotfiles/.localrc .
+        touch .localrc
+        ln -s Github/.dotfiles/.config .
         bind -f  ~/.inputrc
         echo "Sym Links created"
     else 
@@ -99,7 +100,13 @@ if [[ "$OSTYPE" == "linux-gnu" ]]; then
     read -p "apt-get neovim? y or n?" neovim
     if [ "$neovim" == "y" ]; then
         echo "Installing software for efficiency"
-        apt-get install nvim
+        # apt-get install neovim
+        
+        # the following source from https://github.com/neovim/neovim/wiki/Installing-Neovim#appimage-universal-linux-package & https://www.reddit.com/r/neovim/comments/f9661m/how_do_i_install_the_latest_version_of_neovim_on/
+        # neovimrc is loaded from ~/.config/nvim (http://vimcasts.org/episodes/meet-neovim/)
+        # installing vim with root access: https://askubuntu.com/questions/339/how-can-i-install-a-package-without-root-access
+        curl -LO https://github.com/neovim/neovim/releases/download/stable/nvim.appimage
+        chmod u+x nvim.appimage
     else
         echo "Skipped Installing software for efficency"
     fi
