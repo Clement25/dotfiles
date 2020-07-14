@@ -33,6 +33,10 @@ fi
 [[ -s $HOME/.autojump/etc/profile.d/autojump.sh ]] && source $HOME/.autojump/etc/profile.d/autojump.sh
 
 
+# set vim as the common editor
+export VISUAL=vim
+export EDITOR="$VISUAL"
+
 # append history command instead of overwriting it
 shopt -s histappend
 
