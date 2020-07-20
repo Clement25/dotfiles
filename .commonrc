@@ -81,8 +81,9 @@ alias 'ta'='tmux a'
 alias 'sl'='screen -ls'
 alias 'sr'='screen -r '
 
-# pdbrc
+# pip related
 alias 'pi'='pip install -r ~/Github/.dotfiles/requirements.txt'
 alias 'pu'='pip uninstall -r ~/Github/.dotfiles/requirements.txt'
+alias 'pu'='pip install --upgrade pip'
 
 
