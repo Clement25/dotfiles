@@ -20,12 +20,14 @@ unset __conda_setup
 
 
 # neovim settings
-if [ -f $HOME/nvim.appimage ]; then
-        alias 'vi'='./nvim.appimage'
+if [ -f $HOME/Github/.dotfiles/nvim.appimage ]; then
+        alias 'nvim'='$HOME/Github/.dotfiles/nvim.appimage'
+        alias 'vi'="nvim"
 fi
 
 if [ -f $HOME/squashfs-root/AppRun ]; then
-        alias 'vi'='~/squashfs-root/AppRun'
+        alias 'nvim'='~/squashfs-root/AppRun'
+        alias 'vi'="nvim"
 fi
 
 if [ -x "$(command -v nvim)" ]; then
@@ -83,7 +85,7 @@ alias 'sr'='screen -r '
 
 # pip related
 alias 'pi'='pip install -r ~/Github/.dotfiles/requirements.txt'
-alias 'pu'='pip uninstall -r ~/Github/.dotfiles/requirements.txt'
+alias 'pui'='pip uninstall -r ~/Github/.dotfiles/requirements.txt'
 alias 'pu'='pip install --upgrade pip'
 
 
