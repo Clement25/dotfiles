@@ -20,30 +20,33 @@ autojump:
 
 # commands requrie sudo    
 update:
-	sudo apt-get update
+	sudo apt-get -y update
+
+upgrade:
+	sudo apt-get -y upgrade
 
 vim:
-	sudo apt-get install vim
+	sudo apt-get -y install vim
 
 tmux:
-	sudo apt-get install tmux
+	sudo apt-get -y install tmux
     
 ctags:
-	sudo apt-get install ctags
+	sudo apt-get -y install ctags
 
 
 openssh:
-	sudo apt-get install openssh-server
+	sudo apt-get install -y openssh-server
 	sudo ufw allow 22
 
 
 curl:
-	sudo apt install curl
+	sudo apt install -y curl
 
 wget:
-	sudo apt install wget
+	sudo apt install -y wget
 
 bash_complete:
-	sudo apt install bash-completion
+	sudo apt install -y bash-completion
 
 
