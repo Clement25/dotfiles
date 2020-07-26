@@ -3,3 +3,4 @@ jupyter_notebook_config.py
 !.ssh/config
 autojump/
 nvim.appimage
+nvim/.netrwhist

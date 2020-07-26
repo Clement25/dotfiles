@@ -136,7 +136,7 @@ let g:KiteShowPopularPatterns=1
 nmap <F6> :KiteShowPopularPatterns <CR>
 nmap <F7> :KiteHidePopularPatterns <CR>
 
-
+nmap <F2> : execute "lvim /" . expand("<cword>") . "/gj **/*.py" <Bar> lw <CR>
 
 
 
