@@ -142,6 +142,7 @@ if ! [ -x "$(command -v nvtop)" ]; then
  # add -l 100 for longer line number
  alias 'nvtop'="python ~/Github/.dotfiles/.nvidia-htop.py"
 fi
+alias 'gpustat'='watch -c gpustat -cp --color'
 
 
 # cuda version
