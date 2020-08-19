@@ -1,7 +1,7 @@
 #!/bin/bash
 
 
-echo "-------- Begin to install common libraries for working --------- \n\n"
+echo -e "-------- Begin to install common libraries for working --------- \n\n"
 
        
 # --------- Linux setup ----------
