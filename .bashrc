@@ -138,10 +138,8 @@ export CUDA_DEVICE_ORDER=PCI_BUS_ID
 
 
 
-if ! [ -x "$(command -v nvtop)" ]; then
- # add -l 100 for longer line number
- alias 'nvtop'="python ~/Github/.dotfiles/.nvidia-htop.py"
-fi
+# add -l 100 for longer line number
+alias 'smi'="python ~/Github/.dotfiles/.nvidia-htop.py"
 alias 'gpustat'='watch -c gpustat -cp --color'
 
 
