@@ -136,7 +136,7 @@ let g:KiteShowPopularPatterns=1
 nmap <F6> :KiteShowPopularPatterns <CR>
 nmap <F7> :KiteHidePopularPatterns <CR>
 
-
+nmap <F2> : execute "lvim /" . expand("<cword>") . "/gj **/*.py" <Bar> lw <CR>
 
 
 
@@ -295,7 +295,7 @@ nmap <F5> :set rnu! <CR>
 let mapleader = '\'
 map <Leader>ve :sp $HOME/.vimrc<CR>
 map <Leader>vs :source $HOME/.vimrc<CR>
-nmap <Leader>d Oimport pdb; pdb.set_trace()<Esc>
+nmap <Leader>d Oimport ipdb; ipdb.set_trace()<Esc>
 
 " ----- JISTR/VIWGM-NERDTREE-TABS -------------
 " Open/close NERDTree Tabs with \t

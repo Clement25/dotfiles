@@ -1,3 +1,4 @@
-pdbpp
+ipdb
 neovim
 powerline-status
+gpustat

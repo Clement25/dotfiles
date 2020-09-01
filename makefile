@@ -49,4 +49,6 @@ wget:
 bash_complete:
 	sudo apt install -y bash-completion
 
+nvtop:
+	sudo apt install -y nvtop
 

@@ -53,7 +53,8 @@ if [[ "$OSTYPE" == "linux-gnu" ]]; then
         ln -s Github/.dotfiles/.nvtop.sh .
         ln -s Github/.dotfiles/.profile
         touch .localrc
-        ln -s ~/Github/.dotfiles/nvim ~/.config
+        mkdir .config/
+        ln -s ~/Github/.dotfiles/nvim ~/.config/nvim
         bind -f  ~/.inputrc
         echo "Sym Links created"
     else 

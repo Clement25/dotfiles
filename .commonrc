@@ -65,18 +65,19 @@ alias 't'='ctags -R .'
 alias 'rmr'='rm -r'
 alias 'rmrf'='rm -rf'
 alias 'cpr'='cp -r'
-# port 8888
+alias 'py'='python'
+
+# usage port 8888
 alias 'port'='lsof -n -i'
-# check the user and command of the pid
-# checkpid <pid>
+# check the user and command of the pid, usage: checkpid <pid>
 alias 'checkpid'='ps -u -p'
 # nbdime for merge
 alias 'mergenb'='nbdime config-git --enable --global'
 
 # shortcut for tmux
-alias 'new'='tmux new-session -s '
+alias 'tn'='tmux new-session -s '
 alias 'tl'='tmux list-sessions'
-alias 'switch'='tmux switch -t'
+alias 'ts'='tmux switch -t'
 alias 'ta'='tmux a'
 
 # shortcut for screen
@@ -87,5 +88,6 @@ alias 'sr'='screen -r '
 alias 'pi'='pip install -r ~/Github/.dotfiles/requirements.txt'
 alias 'pui'='pip uninstall -r ~/Github/.dotfiles/requirements.txt'
 alias 'pu'='pip install --upgrade pip'
+
 
 
