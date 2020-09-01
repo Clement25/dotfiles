@@ -4,29 +4,30 @@
 [alias]
         ac = "!git add . ; git commit "
         a = add .
+        alias = "!git config -l | grep alias | cut -c 7-"
+        addt = !sh -c 'git ls-files | grep \"\\.$1*\" | xargs git add' - 
+        amendc = commit --amend
+        back = reset --hard HEAD
+        br = branch
         ci = commit 
         co = checkout
+        cre = config credential.helper store
+        d = difftool -y
+        f = "!git ls-files | grep -i"
+        file-change = "!change() { git diff --name-status \"$1^\" \"$1\"; }; change"
         l = log --graph --pretty=format:'%Cred%h%Creset -%C(yellow)%d%Creset %s %Cgreen(%cr) %C(cyan)<%an>%Creset' --abbrev-commit --date=relative
         lo = log --pretty=oneline --since='2 days ago' --color --graph --abbrev-commit 
         lod = log -p -1 --color --graph --pretty=format:'%Cred%h%Creset -%C(yellow)%d%Creset %s %Cgreen(%ci) %C(bold blue) <%an>%Creset' --abbrev-commit
-        s = "!git status"
-        d = difftool -y
         m = mergetool -y
-        cre = config credential.helper store
+        nb = "mergetool --tool=nbdime"
         p = "!git rev-parse --abbrev-ref HEAD | xargs git push origin"
         pl = "!git rev-parse --abbrev-ref HEAD | xargs git pull origin"
+        rmc = rm --cached 
+	rmbr = remote show origin
+        s = "!git status"
         unstage = reset --mixed HEAD .
         uncommit = reset --soft HEAD^
-        back = reset --hard HEAD
-        f = "!git ls-files | grep -i"
-        alias = "!git config -l | grep alias | cut -c 7-"
-        amendc = commit --amend
-        rmc = rm --cached 
-        addt = !sh -c 'git ls-files | grep \"\\.$1*\" | xargs git add' - 
-        file-change = "!change() { git diff --name-status \"$1^\" \"$1\"; }; change"
-        nb = "mergetool --tool=nbdime"
         vimdiff = "!vim -p `git diff --name-only`"
-        br = branch
 
 
 [push]
