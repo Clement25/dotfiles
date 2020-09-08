@@ -140,7 +140,7 @@ export CUDA_DEVICE_ORDER=PCI_BUS_ID
 
 # add -l 100 for longer line number
 alias 'smi'="python ~/Github/.dotfiles/.nvidia-htop.py"
-alias 'gpustat'='watch -c gpustat -cp --color'
+alias 'watchgpu'='watch -c gpustat -cp --color'
 
 
 # cuda version
