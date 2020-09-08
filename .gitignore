@@ -4,5 +4,3 @@ jupyter_notebook_config.py
 autojump/
 nvim.appimage
 nvim/.netrwhist
-nvim/*
-!nvim/nvim/init.vim

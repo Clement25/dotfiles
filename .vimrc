@@ -295,7 +295,7 @@ nmap <F5> :set rnu! <CR>
 let mapleader = '\'
 map <Leader>ve :sp $HOME/.vimrc<CR>
 map <Leader>vs :source $HOME/.vimrc<CR>
-nmap <Leader>d Oimport pdb; pdb.set_trace()<Esc>
+nmap <Leader>d Oimport ipdb; ipdb.set_trace()<Esc>
 
 " ----- JISTR/VIWGM-NERDTREE-TABS -------------
 " Open/close NERDTree Tabs with \t
